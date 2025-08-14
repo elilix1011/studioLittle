@@ -1,0 +1,140 @@
+@charset "Shift_jis";
+
+/*========================================
+ 
+==========================================*/
+body {
+	background: url(../diet-yoga/images/back.gif);
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+div#base {
+	width: 930px;
+	margin: 15px auto;
+	padding: 15px;
+}
+
+#main {
+}
+
+
+.title{
+	color: #673f2b;
+	font-size: 50px;
+	font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	text-align: center;
+	line-height: 65px;
+}
+
+label{
+	cursor: pointer;
+}
+/*========================================
+ フォームのテーブル関係
+==========================================*/
+
+#form_area table{
+	width: 100%;
+}
+#form_area th {
+	width: 30%;
+	background: #F2F2F2;
+	font-weight: normal;
+	text-align: left;
+}
+#form_area td {
+	background: #FFFFFF;
+}
+
+/* 必須マーク */
+.form-must {
+    margin-left: 7px;
+    padding: 3px;
+    background-color: #e05e70;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 80%;
+}
+/* ポイント */
+.point {
+	color: #e51266;
+}
+
+.textcenter{
+	text-align: center;
+}
+
+form input[type="text"], form input[type="email"], form .searchform-input-wrapper input, form textarea
+{
+    border: none;
+    color: var(--main-text);
+    background: #eee;
+    padding: 10px;
+    font-size: 1rem;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+/*========================================
+ 上部メッセージ欄
+==========================================*/
+div.top_mes {
+	padding: 5px;
+	background-color: #e51266;
+	color: #ffffff;
+}
+div.top_topmes {
+	padding: 10px;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.submitbtn {
+	margin-top: 60px;
+    box-shadow: 0px 0px 0px 10px #eb536a;
+    border: solid 2px white;
+    display: inline-block;
+}
+
+input[type="submit"]{
+	cursor: pointer;
+    height: 100px;
+    line-height: 100px;
+    width: 700px;
+    background: #eb536a;
+    font-size: 36px;
+    border: none;
+    text-align: center;
+    -webkit-appearance: none;
+    border-radius: 0;
+	font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    color: #fff;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+}
+/*========================================
+ エラーメッセージ関係
+==========================================*/
+div#error_area {
+	margin: 20px;
+	padding: 5px;
+	border: solid 1px #C00;
+	display: none;
+}
+
+#error_area .attention {
+	font-weight: bold;
+	margin: 0px 0px 5px 0px;
+	padding: 5px;
+	background: #FFCC00;
+	color: #FF0000;
+}
+.title {
+}

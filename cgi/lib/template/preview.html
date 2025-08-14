@@ -1,0 +1,67 @@
+print <<"<!---ＨＴＭＬ--->";
+<HTML><HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>AmigoNewsBoard [投稿プレビュー]</TITLE>
+<STYLE type="text/css"><!--
+A{text-decoration: none; color : #003399;}
+A:VISITED{text-decoration: none;color : blue;}
+A:HOVER{text-decoration: underline;}
+A:ACTIVE{text-decoration: underline;color : #ff0099;}
+.Face{FONT-FAMILY: tahoma,verdana,arial,helvetica,serif,MSゴシック;}
+.Title{font-size : 10pt; background-color : #4812c8; color : white; font-weight : bold;}
+.List{font-size : 10pt; color : yellow;}
+.Status{font-size : 10pt; background-color : #f0f0f0;}
+.Comment{font-size : 9pt;}
+--></STYLE></HEAD><BODY><CENTER><TABLE width="100%">
+<TR><TD align="center"><IMG src="$ImageDir/title.gif" width="421" height="70" border="0"></TD></TR>
+<TR><TD align="center"><HR size="2"><FONT style="font-size : 11pt;">&nbsp; 
+[<A href="$HomeUrl">ホーム</A>] 
+[<A href="javascript:history.back()"><FONT color="blue">戻る</FONT></A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}">新着順</A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}&Num=$FORM{Num}">ニュース表\示</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=s&No=$FORM{No}&Num=$FORM{Num}">キーワード検索</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=lc&No=$FORM{No}&Num=$FORM{Num}">過去ログ</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=uo&No=$FORM{No}&Num=$FORM{Num}">ユーザー設定</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=ac&No=$FORM{No}&Num=$FORM{Num}">管理室</A>]
+</FONT><HR size="2"></TD></TR><TR><TD height="5"></TD></TR></TABLE></CENTER><BR>
+<DIV class="Face"><TABLE width="100%" cellPadding=0 cellSpacing=0>
+<TR><TD class="Title">&nbsp;<FONT class="List">■</FONT>$PREFORM{Title}</TD></TR>
+<TR><TD class="Status">&nbsp;No: $NewsNum&nbsp;/&nbsp;Genre: $GenreName&nbsp;/&nbsp;Date:$Date</TD></TR></TABLE>
+<BLOCKQUOTE class="Comment">$PREFORM{Comment}<BR><BR>
+<A href="$PREFORM{Url}">$PREFORM{Url}</A></BLOCKQUOTE></DIV>
+<FORM action="$BaseDir/$MainCGI" method="POST">
+<INPUT type="hidden" name="cmd" value="dra">
+<INPUT type="hidden" name="Type" value="$FORM{Type}">
+<INPUT type="hidden" name="No" value="$FORM{No}">
+<INPUT type="hidden" name="Num" value="$FORM{Num}">
+<INPUT type="hidden" name="Page" value="$FORM{Page}">
+<INPUT type="hidden" name="View" value="$FORM{View}">
+<INPUT type="hidden" name="Target" value="$FORM{Target}">
+<INPUT type="hidden" name="SID" value="$FORM{SID}">
+<INPUT type="hidden" name="AdminPass" value="$FORM{AdminPass}">
+<INPUT type="hidden" name="Back" value="$FORM{Back}">
+<INPUT type="hidden" name="SType" value="$FORM{SType}">
+<INPUT type="hidden" name="Term" value="$FORM{Term}">
+<INPUT type="hidden" name="Max" value="$FORM{Max}">
+<INPUT type="hidden" name="SGenre" value="$FORM{SGenre}">
+<INPUT type="hidden" name="STarget" value="$FORM{STarget}">
+<INPUT type="hidden" name="GenreUrl" value="$FORM{GenreUrl}">
+<INPUT type="hidden" name="Title" value="$HFORM{Title}">
+<INPUT type="hidden" name="Url" value="$HFORM{Url}">
+<INPUT type="hidden" name="Genre" value="$HFORM{Genre}">
+<INPUT type="hidden" name="Comment" value="$HFORM{Comment}">
+<INPUT type="hidden" name="Word" value="$FORM{Word}"><INPUT type="submit" value="投稿する" style="cursor : hand;"></FORM>
+<TABLE width="100%"><TR><TD height="10"></TD></TR><TR>
+<TD align="center"><HR size="2"><FONT style="font-size : 11pt;">&nbsp; 
+[<A href="$HomeUrl">ホーム</A>] 
+[<A href="javascript:history.back()"><FONT color="blue">戻る</FONT></A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}">新着順</A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}&Num=$FORM{Num}">ニュース表\示</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=s&No=$FORM{No}&Num=$FORM{Num}">キーワード検索</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=lc&No=$FORM{No}&Num=$FORM{Num}">過去ログ</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=uo&No=$FORM{No}&Num=$FORM{Num}">ユーザー設定</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=ac&No=$FORM{No}&Num=$FORM{Num}">管理室</A>]
+</FONT><HR size="2"></TD></TR></TABLE></BODY></HTML>
+<!---ＨＴＭＬ--->
+1;

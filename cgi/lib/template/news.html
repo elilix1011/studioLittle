@@ -1,0 +1,79 @@
+print <<"<!---ＨＴＭＬ--->";
+<HTML><HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>AmigoNewsBoard [ニュース一覧]</TITLE>
+<STYLE type="text/css"><!--
+A{text-decoration: none; color : #003399;}
+A:VISITED{text-decoration: none;color : blue;}
+A:HOVER{text-decoration: underline;}
+A:ACTIVE{text-decoration: underline;color : #ff0099;}
+.Face{FONT-FAMILY: tahoma,verdana,arial,helvetica,serif,MSゴシック;}
+.PageNum{font-size : 14pt;}
+.Title{font-size : 10pt; background-color : #4812c8; color : white; font-weight : bold;}
+.List{font-size : 10pt; color : yellow;}
+.Status{font-size : 10pt; background-color : #f0f0f0;}
+.Comment{font-size : 9pt;}
+--></STYLE></HEAD><BODY><CENTER>
+<TABLE width="100%">
+<TR>
+<TD align="center" colspan="3"><IMG src="$ImageDir/title_news.jpg" width="421" height="70" border="0"></TD>
+</TR>
+<TR>
+<TD align="center" colspan="3"><HR size="2"><FONT style="font-size : 11pt;">&nbsp; 
+[<A href="$HomeUrl">ホーム</A>] 
+[<A href="javascript:history.back()"><FONT color="blue">戻る</FONT></A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}">新着順</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=s&No=$FORM{No}&Num=$FORM{Num}">キーワード検索</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=lc&No=$FORM{No}&Num=$FORM{Num}">過去ログ</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=uo&No=$FORM{No}&Num=$FORM{Num}">ユーザー設定</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=ac&No=$FORM{No}&Num=$FORM{Num}">管理室</A>] 
+</FONT><HR size="2"></TD></TR>
+<TR><TD width="33%"></TD>
+<TD width="34%" align="center">
+<!---ＨＴＭＬ--->
+&_PageControl;
+print <<"<!---ＨＴＭＬ--->";
+</TD>
+<TD width="33%"></TD>
+</TR></TABLE>
+<BR></CENTER><DIV class="Face">
+<!---ＨＴＭＬ--->
+&_NewsPrint;
+print <<"<!---ＨＴＭＬ--->";
+</DIV><CENTER>
+<TABLE width="100%"><TR>
+<TD width="33%"></TD>
+<TD width="34%" align="center">
+<!---ＨＴＭＬ--->
+&_PageControl;
+print <<"<!---ＨＴＭＬ--->";
+</TD>
+<TD width="33%">
+<FORM action="$BaseDir/$MainCGI" style="margin-top : 0px;margin-bottom : 0px;text-align : right;font-size : 9pt;" method="POST">
+<INPUT type="hidden" name="cmd" value="de">
+<INPUT type="hidden" name="No" value="$FORM{No}">
+<INPUT type="hidden" name="Num" value="$FORM{Num}">
+<INPUT type="hidden" name="Page" value="$FORM{Page}">
+<INPUT type="hidden" name="SID" value="$PID">
+<INPUT type="hidden" name="Back" value="nl">
+<SELECT name="Target">
+<!---ＨＴＭＬ--->
+&_EditNum;
+print <<"<!---ＨＴＭＬ--->";
+</SELECT>&nbsp;<INPUT size="8" type="password" name="AdminPass"> 
+<INPUT type="submit" value=" 編集 " style="cursor : hand;"><INPUT type="checkbox" name="Delete" value="1">削除</FORM></TD></TR>
+<TR>
+<TD align="center" colspan="3"><HR size="2"><FONT style="font-size : 11pt;">&nbsp; 
+[<A href="$HomeUrl">ホーム</A>] 
+[<A href="javascript:history.back()"><FONT color="blue">戻る</FONT></A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}">新着順</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=s&No=$FORM{No}&Num=$FORM{Num}">キーワード検索</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=lc&No=$FORM{No}&Num=$FORM{Num}">過去ログ</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=uo&No=$FORM{No}&Num=$FORM{Num}">ユーザー設定</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=ac&No=$FORM{No}&Num=$FORM{Num}">管理室</A>]
+</FONT><HR size="2"></TD>
+</TR></TABLE>
+</CENTER></BODY></HTML>
+<!---ＨＴＭＬ--->
+1;

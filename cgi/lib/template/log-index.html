@@ -1,0 +1,46 @@
+print <<"<!---ＨＴＭＬ--->";
+<HTML><HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>AmigoNewsBoard [過去ログ]</TITLE>
+<STYLE type="text/css"><!--
+A{text-decoration: none; color : #003399;}
+A:VISITED{text-decoration: none;color : blue;}
+A:HOVER{text-decoration: underline;}
+A:ACTIVE{text-decoration: underline;color : #ff0099;}
+.Face{FONT-FAMILY: tahoma,verdana,arial,helvetica,serif,MSゴシック;}
+.Now{background-color : #eeeeee; color : red;}
+.No{background-color : #eeeeee; font-size : 11pt;}
+.Date{background-color : #eeeeee; font-size : 11pt;}
+.Num{background-color : #eeeeee; font-size : 11pt;}
+--></STYLE></HEAD><BODY><CENTER><TABLE width="100%">
+<TR><TD align="center"><IMG src="$ImageDir/title.gif" width="421" height="70" border="0"></TD></TR>
+<TR><TD align="center"><HR size="2"><FONT style="font-size : 11pt;">&nbsp; 
+[<A href="$HomeUrl">ホーム</A>] 
+[<A href="javascript:history.back()"><FONT color="blue">戻る</FONT></A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}">新着順</A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}&Num=$FORM{Num}">ニュース表\示</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=s&No=$FORM{No}&Num=$FORM{Num}">キーワード検索</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=uo&No=$FORM{No}&Num=$FORM{Num}">ユーザー設定</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=ac&No=$FORM{No}&Num=$FORM{Num}">管理室</A>]
+</FONT><HR size="2"></TD></TR></TABLE><BR>
+<TABLE border="0" cellpadding="2" cellspacing="1" width="70%" style="font-size : 11pt;">
+<TR bgcolor="#b0c4ee"><TD align="center" bgcolor="#ADE7DA">ログNo.</TD>
+<TD align="center" bgcolor="#ADE7DA">投稿期間</TD><TD align="center" bgcolor="#ADE7DA">記事番号範囲</TD></TR>
+<TR><TD align="center" class="No"><A href="$BaseDir/$MainCGI?No=">000</A></TD>
+<TD align="center" class="Now">現在</TD><TD align="center" class="Num">-</TD></TR>
+<!---ＨＴＭＬ--->
+&_Index;
+print <<"<!---ＨＴＭＬ--->";
+</TABLE><BR><TABLE width="100%"><TR><TD height="5"></TD></TR>
+<TR><TD align="center"><HR size="2"><FONT style="font-size : 11pt;">&nbsp; 
+[<A href="$HomeUrl">ホーム</A>] 
+[<A href="javascript:history.back()"><FONT color="blue">戻る</FONT></A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}">新着順</A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}&Num=$FORM{Num}">ニュース表\示</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=s&No=$FORM{No}&Num=$FORM{Num}">キーワード検索</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=uo&No=$FORM{No}&Num=$FORM{Num}">ユーザー設定</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=ac&No=$FORM{No}&Num=$FORM{Num}">管理室</A>]
+</FONT><HR size="2"></TD></TR></TABLE></CENTER></BODY></HTML>
+<!---ＨＴＭＬ--->
+1;

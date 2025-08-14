@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>お申し込み・お問い合わせ</title>
+
+<style type="text/css">
+/* ↓は編集しないでください */
+div#error_area {
+	_%error_display%_
+}
+/* ↑は編集しないでください */
+</style>
+
+</head>
+
+<body>
+<div id="base">
+
+<p><img src="../module/images/title_contact.jpg" width="250" height="50" alt="お問い合わせ" /></p>
+
+<div id="main">
+
+<div class="top_mes">■ お問合せ内容をメッセージ欄にご記入の上、送信してください。</div>
+
+
+<!-- ▼エラーメッセージ表示領域 -->
+<div id="error_area">
+  <div class="attention"><img src="attention.gif" width="21" height="20" alt="ご確認ください" /> 以下のメッセージをご確認ください。</div>
+  <ul id="error_mes">
+_%error_mes%_
+  </ul>
+</div>
+<!-- △エラーメッセージ表示領域 -->
+
+
+<div id="form_area">
+
+<form action="mail.cgi" method="post">
+<input type="hidden" name="mode" value="check" />
+
+<p><span class="hissu">※</span>印の項目は入力必須です。もれなくご入力下さい。</p>
+
+<table border="0" cellspacing="1" cellpadding="5">
+ <tr>
+  <th><span class="hissu">※</span> お名前</th>
+  <td><input name="name" type="text" value="_%name%_" size="25" /></td>
+ </tr>
+ <tr>
+  <th><span class="hissu">※</span> フリガナ</th>
+  <td><input name="kana" type="text" value="_%kana%_" size="25" /></td>
+ </tr>
+ <tr>
+  <th><span class="hissu">※</span> メールアドレス</th>
+  <td>
+<!-- メールアドレスは必ず name="email" で記述してください -->
+   <input name="email" type="text" value="_%email%_" size="50" />  </td>
+ </tr>
+ <tr>
+  <th><span class="hissu">※</span> メールアドレス確認用</th>
+  <td>
+<!-- メールアドレス確認用は必ず name="email2" で記述してください -->
+   もう一度メールアドレスを入力してください<br />
+   <input name="email2" type="text" value="_%email2%_" size="50" />  </td>
+ </tr>
+ <tr>
+  <th> お電話番号</th>
+  <td>（電話でご連絡をご希望の方はご記入ください）<br />
+    <input name="tel" type="text" value="_%tel%_" size="20" /></td>
+ </tr>
+
+ <tr>
+   <th>ご本人が受講希望ですか？</th>
+   <td><label><input name="who" type="radio" value="受講希望者本人" _%who_本人%_ /> 受講希望者本人</label>　
+     <label><input name="who" type="radio" value="子どもが受講希望" _%who_保護者%_ /> 子どもが受講希望</label></td>
+ </tr>
+ <tr>
+   <th>興味をお持ちのクラスはどれですか？</th>
+   <td><p><br />
+     <input type="hidden" name="class" value="dummy">
+  <!--
+チェックボックスの場合、入力の際にチェックが１つも無いとＣＳＶファイルに
+書き込んだ際にデータにずれが生じてしまいます。
+この問題を回避するためにダミーのデータをＣＧＩに渡します。
+上の１行（name="xxx" のxxxは変更）をチェックボックスのフォームの前に記述
+してください。
+-->
+  <span class="point">KIDS DANCE<br />
+  </span>
+  <label>
+    <input type="checkbox" name="class" value="KIDS幼児・低学年クラス" _%class_KIDS幼児・低学年クラス%_ />
+    幼児＆低学年クラス</label>
+     <label>
+       <input type="checkbox" name="class" value="KIDS小学高学年クラス" _%class_KIDS小学生クラス%_ /> 
+       小学高学年クラス</label>
+     <label><br />
+     </label>
+     <span class="point">クラシックバレエ</span><br />
+     <label>
+       <input type="checkbox" name="class" value="クラシックバレエ入門クラス" _%class_クラシックバレエ幼児クラス%_ />
+       入門クラス</label>
+     <label>
+       <input type="checkbox" name="class" value="クラシックバレエ初級クラス" _%class_クラシックバレエ小学生クラス%_ />
+       初級クラス</label>
+     <label>
+       <input type="checkbox" name="class" value="クラシックバレエ大人クラス" _%class_クラシックバレエ大人クラス%_ />
+       中学生以上クラス</label>
+     <br />
+     <span class="point">JAZZHIPHOP</span><br />
+     <label>
+       <input type="checkbox" name="class" value="JAZZHIPHOP大人クラス" _%class_JAZZHIPHOP大人クラス%_ /> 
+       中学生以上クラス</label>
+     <br />
+       <span class="point">HIPHOP</span><br />
+       <label>
+         <input type="checkbox" name="class" value="HIPHOP幼児・低学年クラス" _%class_HIPHOP幼児・低学年クラス%_ /> 
+        幼児・低学年クラス</label>
+<!-- <label>
+         <input type="checkbox" name="class" value="HIPHOP高学年クラス" _%class_HIPHOP高学年クラス%_ /> 
+         高学年クラス</label> -->
+      <label>
+         <input type="checkbox" name="class" value="HIPHOP中学生以上クラス" _%class_HIPHOP中学生以上クラス%_ /> 
+         中学生以上クラス</label>
+       <br />
+       <span class="point">YOGA</span><br />
+       <label>
+         <input type="checkbox" name="class" value="YOGA大人クラス" _%class_YOGA大人クラス%_ />
+         大人クラス</label>
+       <!-- <label>
+         <input type="checkbox" name="class" value="YOGAマタニティヨガ" _%class_YOGAマタニティヨガ%_ />
+         マタニティヨガ</label>
+       <label>
+         <input type="checkbox" name="class" value="YOGA大人クラス" _%class_YOGA産後ベビマヨガ%_ />
+         産後＆ベビマヨガ</label> -->
+       　 </p></td>
+ </tr>
+ <tr>
+  <th><span class="hissu">※</span> お申し込み・<br />お問い合わせ内容</th>
+  <td><p>いずれかを選択のうえ、ご連絡ください。<br />
+<label><input name="contact" type="radio" value="体験レッスンお申し込み" _%contact_体験レッスンお申し込み%_ />体験レッスンお申し込み</label>　
+<label><input name="contact" type="radio" value="入会申し込み" _%contact_入会申し込み%_ />入会申し込み</label><br /><br />
+希望のクラス ・曜日 ・時間 ・人数をご記入ください。
+      <br />
+      <textarea name="message" rows="5" cols="50">_%message%_</textarea>
+    </p></td>
+ </tr>
+</table>
+
+<div style="height:20px; padding:20px 0px;">
+<p style="float:left;"><input type="submit" value="確認画面へ進む" /></p>
+</div>
+
+</form>
+
+<!-- ↓著作権表示です。削除はできません。削除をご希望の場合はシェアウェアCGIのご購入をお願いいたします。 -->
+_%copyright%_
+<!-- ↑著作権表示です。削除はできません。削除をご希望の場合はシェアウェアCGIのご購入をお願いいたします。 -->
+
+</div>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

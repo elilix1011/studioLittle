@@ -30,3 +30,22 @@ Thumbs.db
 # Old version files
 *.202*
 *.old
+*.bak
+*.backup
+
+# Log files
+*.log
+error_log
+access_log
+
+# Temporary files
+*.tmp
+*.temp
+
+# WordPress files (if not needed for development)
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+
+# Server-specific files
+.htaccess

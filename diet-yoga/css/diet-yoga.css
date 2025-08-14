@@ -1,0 +1,742 @@
+/* ===================================================================
+CSS information
+
+ file name  :diet-yoga.css
+ author     :
+ style info :ダイエット専門ヨガスタジオページのみで使用
+=================================================================== */
+
+@charset "Shift_JIS";
+body {
+	background: url(../images/back.gif);
+	font-size: 18px;
+	letter-spacing: 0.1em;
+}
+
+.wrap{
+	overflow: hidden;
+}
+
+#allctsyoga {
+	width: 990px;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+h1{
+	color: #673f2b;
+	font-size: 72px;
+	font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	text-align: left;
+	margin: -200px 0 100px 100px;
+}
+
+h2{
+	color: #673f2b;
+	font-size: 60px;
+	font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+h3{
+	color: #eb536a;
+	font-size: 30px;
+	font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.bold{
+	font-weight: bold;
+}
+.under {
+	background: linear-gradient(transparent 70%, #fff100 50%); 
+	font-weight: bold;
+}
+
+.tit01 {
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  overflow: visible;
+}
+
+.tit02 {
+  display: inline-block;
+  width: 200px;
+  height: auto;
+  overflow: visible;
+}
+
+.headtxt {
+	width: 200px;
+	letter-spacing: .3rem;
+}
+.foreground {
+  fill: #673f2b;
+}
+
+.background {
+  stroke: #fff;
+  stroke-width: 10;
+  stroke-linejoin: round;
+}
+
+
+.mainbtn a {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  background: #6bb5d8;
+  color: #fff;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  width: 400px;
+  font-size: 22px;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+  box-shadow: 0px 0px 0px 10px #6bb5d8;
+  border: solid 2px white;
+	text-align: center;
+	margin-right: 30px;
+}
+
+.reservationbtn,
+.contactbtn{
+  font-size: 14px;
+  margin: 40px 0 40px 0;
+  text-align: center;
+	position: relative;
+}
+
+.mainbtn.onlineyoga {
+	position: absolute;
+    top: 610px;
+    right: 40px;
+}
+
+.mainbtn.onlineyoga a{
+	width: 320px;
+	background-color: #aaa;
+	box-shadow: 0px 0px 0px 10px #aaa;
+}
+
+.reservationbtn a {
+font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  background: #eb536a;
+  color: #fff;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  width: 700px;
+  font-size: 36px;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+  box-shadow: 0px 0px 0px 10px #eb536a;
+  border: solid 2px white;
+}
+
+.contactbtn a {
+	font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  background: #5dc1bd;
+  color: #fff;
+  display: inline-block;
+  height: 100px;
+  line-height: 100px;
+  width: 700px;
+  font-size: 36px;
+	letter-spacing: 0.05em;
+	font-weight: bold;
+  box-shadow: 0px 0px 0px 10px #5dc1bd;
+  border: solid 2px white;
+}
+
+.reservationbtn img,
+.contactbtn img{
+	position: absolute;
+	right: 60px;
+	bottom: -6px;
+}
+
+.linkbtn{
+	display: block;
+	width: 300px;
+	padding: 10px 20px;
+	margin: 10px 0 10px 280px;
+	background: #fff;
+}
+
+.mainctsbk{
+	 background: url(../images/back_l.png) no-repeat -10% 60%, url(../images/back_r.png) no-repeat 120% -20%;
+}
+
+#maincts{
+	width: 950px;
+	margin: 0 auto;
+	padding: 20px 20px 80px 20px;
+	text-align: center;
+	position: relative;
+}
+
+.mainicon{
+	position: absolute;
+	top:50px;
+	right: 100px;
+}
+
+.importantbox h2{
+	font-size: 35px;
+	color: #E60023;
+}
+
+.importantbox p {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#navi{
+	background: #fff;
+	padding: 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+	#navi a{ font-size: 14px;}
+}
+
+.naviinner {
+ font-size: 16px;
+	text-align: center;
+}
+
+.naviinner a + a{
+  border-left: 1px solid #673f2b;
+
+}
+#navi a {
+	padding: 0 15px 0 15px;
+	color: #673f2b;
+	font-weight: bold;
+}
+
+#about,
+#benefit,
+#teachers,
+#greeting,
+#sevenmenu,
+#time,
+#voice,
+#voice-02,
+#flow,
+#access,
+.pointinner {
+	width: 930px;
+	margin: 0 auto;
+	padding: 80px 30px 0 30px;
+}
+
+.importantbox {
+	width: 930px;
+	margin: 30px auto 0 auto;
+	padding: 20px;
+	border: none;
+}
+
+
+#about{
+	background: url(../images/aboutimg.png) no-repeat right 100px;
+	padding-bottom: 100px;
+	font-size: 20px;
+}
+
+
+.teachersinner,
+.accessinner{
+	background-color: #fff;
+	padding: 30px;
+}
+
+.teachersinner .imgleft{
+    width: 280px;
+}
+
+.teachersinner .imgright{
+    width: 550px;
+}
+.border{
+	border-bottom: 1px dotted #000;
+	margin: 30px 0;
+}
+
+.imgleft{
+	margin-right: 30px;
+}
+
+.teachervoice{
+	line-height: 30px;
+	font-weight: bold;
+}
+.nametit{
+    margin: 20px 0 15px 0;
+	font-size: 24px;
+	border-bottom: 1px dotted #666;
+}
+
+
+.timetable{
+	padding-bottom: 40px;
+}
+
+.tablewrap{
+	width: 930px;
+}
+
+.tablewrap th{
+	font-size: 30px;
+	border: 1px solid #a5a5a5;
+	background-color:#dddddd;
+	text-align: center;
+}
+
+.tablewrap td{
+	font-size: 30px;
+	padding: 15px;
+	border: 1px solid #a5a5a5;
+	text-align: center;
+	background-color:#fff;
+}
+
+.camtxt{
+	color: #673f2b;
+	font-size: 42px;
+	text-align: center;
+	font-weight: bold;
+	margin: 40px 0;
+}
+
+.voiceinner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.voicebox{
+	width: calc(33.3% - 10px);
+	margin: 5px;
+}
+
+.voiceimg{
+	text-align: center;
+}
+
+.voicename{
+	font-size: 16px;
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+
+.flowinner{
+	position: relative;
+	margin-bottom: 40px;
+}
+.flowtitle{
+padding: 18px 0px 18px 150px;
+font-size: 32px;
+background: #673f2b;
+color: rgba(255,255,255,1);
+position: relative;
+}
+
+.flowtitle:before{
+  content:"";
+  width: 0;
+  height: 100%;
+  border-left: 2px solid rgba(255,255,255,.65);
+  position: absolute;
+  top: 0;
+  left: 120px;
+}
+
+.flowtitle span{
+  font-size: 32px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(0px, -50%);
+  padding: 0px 20px;
+}
+
+.flowtitle span small{
+  font-size: 22px;
+  top: -7px;
+}
+
+.flowtxt{
+	margin: 30px 0 0 0;
+}
+
+.steps > li{
+	background: url(../../diet-yoga/images/arrow.png) no-repeat center bottom transparent;
+	margin: 40px 0;
+}
+
+.steps > li.lastchild{
+	margin: 0;
+}
+
+.accessinner{
+	margin: 30px 0 80px 0;
+}
+
+#yogafooter{
+	text-align: center;
+	background-color: #673f2b;
+	padding: 30px 0;
+	color: #fff;
+}
+
+.pagetop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.pagetop a {
+  color: #fff;
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+.pagetop a:before {
+  -webkit-font-smoothing: antialiased;
+  content: "\e911";
+  display: block;
+  font-family: "design_plus";
+  font-size: 18px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 17px;
+  height: 17px;
+}
+
+a,
+a:before,
+a:after,
+input {
+  -webkit-transition-property: background-color, color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: background-color, color;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-timing-function: ease;
+  -o-transition-property: background-color, color;
+  -o-transition-duration: 0.2s;
+  -o-transition-timing-function: ease;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+
+/*Go to top*/
+.crunchify-top:hover {
+color: #fff !important;
+text-decoration: none;
+}
+
+.crunchify-top {
+display: none;
+position: fixed;
+bottom: 1rem;
+right: 1rem;
+width: 3.2rem;
+height: 3.2rem;
+line-height: 3.2rem;
+font-size: 1.4rem;
+color: #fff;
+background-color: #673f2b;
+text-decoration: none;
+border-radius: 3.2rem;
+text-align: center;
+cursor: pointer;
+}
+
+/*Go to top*/
+.crunchify-top:hover {
+color: #fff !important;
+text-decoration: none;
+}
+
+.crunchify-top {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 6rem;
+	height: 90px;
+	line-height: 90px;
+	font-size: 1.4rem;
+	color: #fff;
+	border-radius: 0;
+	text-align: center;
+	color: #fff!important;}
+
+
+.point {
+	background-color: #c5db95;
+	margin-top: 80px;
+  padding: 80px 30px 50px 30px;
+  color: #fff;
+  position: relative;
+}
+
+.point .pointarea {
+  padding: 40px 0 24px;
+  margin: 0 auto;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.point .pointarea::before {
+  content: "";
+  background: url("../images/title_bg.png") center top no-repeat;
+  background-size: 420px 130px;
+  width: 420px;
+  height: 130px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.point .pointtxt {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+	margin-bottom: 10px;
+}
+
+.point .pointtxt  .pointtit{
+	font-size: 40px;
+	color: #eb536a;
+}
+
+.point .pointtxt  span{
+	color: #eb536a;
+}
+
+.pointvoice{
+	margin-left: 15px;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.point .pointtxt .number{
+	font-style: italic;
+}
+
+.pointinner {
+  width: 930px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.pointtop {
+  color: #eb536a;
+  font-size: 36px;
+	text-align: center;
+	margin-top: -20px;
+}
+
+.balloon {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 1.5em 0;
+  padding: 7px 10px;
+  width: calc(90% - 10px);
+  min-height: 90px;
+  color: #555;
+  font-size: 16px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.balloon:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #fff;
+}
+
+.balloon p {
+  margin: 0;
+  padding: 0;
+}
+
+.balloon2 {
+  width: 100%;
+  margin: 1.5em 0;
+  overflow: hidden;
+}
+
+.balloon2 p{
+ color: #333;
+ font-size: 15px;
+ font-weight: normal;
+}
+
+.balloon2 .faceicon {
+  float: left;
+  margin-right: -90px;
+  width: 80px;
+}
+
+.balloon2 .faceicon img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.balloon2 .chatting {
+  width: 100%;
+}
+
+.balloon3 {
+  position: relative;
+  display: inline-block;
+  padding: 12px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 18px;
+  background: #e0edff;
+  border-radius: 15px;
+}
+
+.balloon3:before {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  margin-left: -25px;
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff;
+}
+
+.balloon3 p {
+  margin: 0;
+  padding: 0;
+}
+
+.says {
+  display: inline-block;
+  position: relative; 
+  margin: 5px 0 0 105px;
+  padding: 17px 13px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.says:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 18px; 
+  left: -24px;
+  border: 12px solid transparent;
+  border-right: 12px solid #fff;
+}
+
+.says p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.checkbox{
+    position: relative;
+    padding-left: 15px;
+ }
+ 
+.checkbox:before {
+    content: "";
+    position: absolute;
+    top: .4em;
+    left: 0;
+    -webkit-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    transform: rotate(50deg);
+    width: 5px;
+    height: 10px;
+    border-right: 3px solid #eb536a;
+    border-bottom: 3px solid #eb536a;
+  }
+
+.ggmap {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+ 
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.textcenter{
+	text-align: center;
+}
+
+.mt20{
+	margin-top: 20px !important;
+}
+
+.mt30{
+	margin-top: 30px !important;
+}
+
+.mt40{
+	margin-top: 40px !important;
+}
+
+.mt50{
+	margin-top: 50px !important;
+}
+
+.fs70{
+	font-size: 70%;
+}
+
+.fs120{
+	font-size: 120%;
+}
+
+.wd630{
+	width: 630px;
+}
+
+@media screen and (max-width: 768px) {
+  .br-pc { display:none; }
+  .br-sp { display:block; }
+  }
+
+@media (min-width: 768px) {
+  .br-pc { display:block; }
+  .br-sp { display:none; }
+}

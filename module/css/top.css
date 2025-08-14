@@ -1,0 +1,52 @@
+/* ===================================================================
+CSS information
+
+ file name  :top.css
+ author     :
+ style info :トップページのみで使用
+=================================================================== */
+
+@charset "Shift_JIS";
+body {
+	background-image: url(../img/bg.gif);
+}
+#topmain {
+	width: 980px;
+	margin: 0 auto ;
+}
+#topmenu {
+	width: 980px;
+	margin: 0 auto ;
+}
+#topread {
+	background-color: #FFFFFF;
+	width: 980px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+#topread #about {
+	height: 310px;
+	width: 420px;
+	float: left;
+}
+#topread #news {
+	height: 310px;
+	width: 420px;
+	float: right;
+}
+#topread #news .newstxt {
+	line-height: 18px;
+}
+
+#footer {
+	width: 970px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 10px;
+	color: #84D5F9;
+	text-align: right;
+	background-color: #FFFFFF;
+	padding: 5px;
+}

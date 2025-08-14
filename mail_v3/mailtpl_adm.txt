@@ -1,0 +1,12 @@
+studio littleへ、お問合せを受信しました。
+
+送信日時：_%send_date%_
+
+お名前：_%name%_
+フリガナ：_%kana%_
+メールアドレス：_%email%_
+電話番号：_%tel%_
+受講希望：_%who%_
+希望クラス：_%class%_
+お問い合わせ項目：_%contact%_
+その他ご連絡事項：_%message%_

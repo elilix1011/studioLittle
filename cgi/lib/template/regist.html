@@ -1,0 +1,55 @@
+print <<"<!---ＨＴＭＬ--->";
+<HTML><HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<TITLE>AmigoNewsBoard [$RegistTitle]</TITLE>
+<STYLE type="text/css"><!--
+A{text-decoration: none; color : #003399;}
+A:VISITED{text-decoration: none;color : blue;}
+A:HOVER{text-decoration: underline;}
+A:ACTIVE{text-decoration: underline;color : #ff0099;}
+--></STYLE></HEAD><BODY><TABLE cellpadding="0" cellspacing="0" width="100%">
+<TR><TD><FONT style="font-size : 11pt;">&nbsp;[<A href="javascript:history.back()"><FONT color="blue">戻る</FONT></A>] 
+[<A href="$HomeUrl">ホーム</A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}&Num=$FORM{Num}">ニュース表\示</A>]
+</FONT></TD><TD align="right"><FORM action="$BaseDir/$MainCGI" method="POST" style="margin-top : 0px;margin-bottom : 0px;">
+<INPUT type="hidden" name="cmd" value="ar">
+<INPUT type="hidden" name="No" value="$FORM{No}">
+<INPUT type="hidden" name="Num" value="$FORM{Num}">
+<INPUT type="hidden" name="AdminPass" value="$FORM{AdminPass}">
+<INPUT type="submit" value="管理室へ" style="cursor : hand;">&nbsp;</FORM></TD></TR></TABLE>
+<TABLE width="100%" cellpadding="2"><TR><TH align="center" bgcolor="#4812C8">
+<FONT color="#FFFFFF" style="font-size : 12pt;">$RegistTitle</FONT></TH></TR></TABLE><BR><CENTER>
+<FORM action="$BaseDir/$MainCGI" method="POST">
+<INPUT type="hidden" name="cmd" value="dra">
+<INPUT type="hidden" name="Type" value="$Type">
+<INPUT type="hidden" name="No" value="$FORM{No}">
+<INPUT type="hidden" name="Num" value="$FORM{Num}">
+<INPUT type="hidden" name="Page" value="$FORM{Page}">
+<INPUT type="hidden" name="View" value="$FORM{View}">
+<INPUT type="hidden" name="Target" value="$FORM{Target}">
+<INPUT type="hidden" name="Back" value="$FORM{Back}">
+<INPUT type="hidden" name="SID" value="$PID">
+<INPUT type="hidden" name="AdminPass" value="$FORM{AdminPass}">
+<INPUT type="hidden" name="SType" value="$FORM{SType}">
+<INPUT type="hidden" name="Term" value="$FORM{Term}">
+<INPUT type="hidden" name="Max" value="$FORM{Max}">
+<INPUT type="hidden" name="SGenre" value="$FORM{SGenre}">
+<INPUT type="hidden" name="STarget" value="$FORM{STarget}">
+<INPUT type="hidden" name="Word" value="$FORM{Word}">
+<TABLE><TR><TD><TABLE border="1">
+<TR><TD bgcolor="#E6E6FA" align="right"><FONT style="font-size : 10pt;">&nbsp;タイトル：&nbsp;</FONT></TD>
+<TD><INPUT size="40" type="text" name="Title" value="$DATA{Title}" style="font-size : 10pt;"></TD></TR>
+<TR><TD bgcolor="#E6E6FA" align="right"><FONT style="font-size : 10pt;">&nbsp;関連URL：&nbsp;</FONT></TD>
+<TD><INPUT size="40" type="text" name="Url" value="$DATA{Url}" style="font-size : 10pt;"></TD></TR>
+<TR><TD bgcolor="#E6E6FA" align="right"><FONT style="font-size : 10pt;">&nbsp;ジャンル：&nbsp;</FONT></TD>
+<TD><SELECT name="Genre">
+<!---ＨＴＭＬ--->
+&_GenreList;
+print <<"<!---ＨＴＭＬ--->";
+</SELECT></TD></TR>
+<TR><TD colspan="2"><TEXTAREA rows="8" cols="50" name="Comment" style="font-size : 10pt;">$DATA{Comment}</TEXTAREA></TD></TR>
+</TABLE></TD></TR><TR><TD height="5"></TD></TR><TR><TD style="font-size : 9pt;"><INPUT type="submit" value=" 投稿 " style="cursor : hand;"> 
+<INPUT type="reset" value="リセット" style="cursor : hand;"><INPUT type="checkbox" name="Preview" value="1" checked>プレビュー<INPUT type="checkbox" name="GenreUrl" value="1" checked>ジャンル別URL使用</TD>
+</TR></TABLE></FORM></CENTER><HR></BODY></HTML>
+<!---ＨＴＭＬ--->
+1;

@@ -1,0 +1,73 @@
+print <<"<!---ＨＴＭＬ--->";
+<HTML><HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<META http-equiv="Content-Style-Type" content="text/css">
+<TITLE>AmigoNewsBoard [キーワード検索]</TITLE>
+<STYLE type="text/css"><!--
+A{text-decoration: none; color : #003399;}
+A:VISITED{text-decoration: none;color : blue;}
+A:HOVER{text-decoration: underline;}
+A:ACTIVE{text-decoration: underline;color : #ff0099;}
+.Face{FONT-FAMILY: tahoma,verdana,arial,helvetica,serif,MSゴシック;}
+.Table1{BACKGROUND-COLOR: #f0f0f0; BORDER-BOTTOM: 1pt outset; BORDER-LEFT: 1pt outset; BORDER-RIGHT: 1pt outset; BORDER-TOP: 1pt outset; COLOR: #303030;}
+--></STYLE></HEAD><BODY><CENTER><TABLE width="100%">
+<TR><TD align="center"><IMG src="$ImageDir/title.gif" width="421" height="70" border="0"></TD></TR>
+<TR><TD align="center"><HR size="2"><FONT style="font-size : 11pt;">&nbsp; 
+[<A href="$HomeUrl">ホーム</A>] 
+[<A href="javascript:history.back()"><FONT color="blue">戻る</FONT></A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}">新着順</A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}&Num=$FORM{Num}">ニュース表\示</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=lc&No=$FORM{No}&Num=$FORM{Num}">過去ログ</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=uo&No=$FORM{No}&Num=$FORM{Num}">ユーザー設定</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=ac&No=$FORM{No}&Num=$FORM{Num}">管理室</A>]
+</FONT><HR size="2"></TD></TR></TABLE><BR>
+<FORM action="$BaseDir/$MainCGI" method="POST">
+<INPUT type="hidden" name="cmd" value="sa">
+<INPUT type="hidden" name="No" value="$FORM{No}">
+<INPUT type="hidden" name="Num" value="$FORM{Num}">
+<TABLE width="55%" bgcolor="#e8e8e8" border="0" cellspacing="0" cellpadding="2">
+<TR><TD class="Table1"><TABLE width="100%" cellpadding="3"><TR><TD bgcolor="#424282" align="center">
+<FONT color="#ffffff" style="font-size : 11pt;">キーワード検索</FONT></TD></TR></TABLE>
+<TABLE border="0" cellpadding="0" cellspacing="0"><TR><TD width="10" rowspan="11"></TD><TD height="10"></TD></TR>
+<TR><TD style="font-size : 9pt;">&nbsp;<INPUT maxlength="100" name="Word" size="35" type="text" style="font-size : 10pt;"><INPUT checked name="SType" type="radio" value="AND">AND<INPUT name="SType" type="radio" value="OR">OR</TD></TR>
+<TR><TD height="3"></TD></TR><TR><TD style="font-size : 9pt;">&nbsp;<SELECT name="Term">
+<OPTION value="" selected>期間指定</OPTION>
+<OPTION value="1">昨日まで</OPTION>
+<OPTION value="7">1週間前まで</OPTION>
+<OPTION value="30">1ヶ月前まで</OPTION>
+<OPTION value="365">1年前まで</OPTION>
+</SELECT>&nbsp;<SELECT name="Max">
+<OPTION value="" selected>件数指定</OPTION>
+<OPTION value="10">10件まで</OPTION>
+<OPTION value="25">25件まで</OPTION>
+<OPTION value="50">50件まで</OPTION>
+<OPTION value="100">100件まで</OPTION>
+</SELECT>&nbsp;<SELECT name="View">
+<OPTION value="" selected>表\示件数</OPTION>
+<OPTION value="5">5件ずつ</OPTION>
+<OPTION value="10">10件ずつ</OPTION>
+<OPTION value="20">20件ずつ</OPTION>
+<OPTION value="30">30件ずつ</OPTION>
+<OPTION value="50">50件ずつ</OPTION>
+</SELECT></TD></TR><TR><TD height="3"></TD></TR><TR><TD>&nbsp;<SELECT name="SGenre"><OPTION value="" selected>ジャンル指定</OPTION>
+<!---ＨＴＭＬ--->
+&_GenreList;
+print <<"<!---ＨＴＭＬ--->";
+</SELECT></TD></TR><TR><TD height="3"></TD></TR><TR><TD>&nbsp;<SELECT multiple name="STarget" size="3">
+<OPTION value="5" selected>本文</OPTION>
+<OPTION value="2">タイトル</OPTION>
+<OPTION value="3">URL</OPTION>
+</SELECT> &nbsp;<INPUT type="submit" value=" 検索 " style="cursor : hand;"> <INPUT type="reset" value="リセット" style="cursor : hand;"></TD></TR>
+<TR><TD height="15"></TD></TR><TR><TD style="font-size : 9pt;">&nbsp; <FONT color="#FF0000">※複数キーワードは半角スペースで区切る</FONT></TD></TR>
+<TR><TD height="15"></TD></TR></TABLE></TD></TR></TABLE></FORM><TABLE width="100%"><TR><TD height="5"></TD></TR><TR>
+<TD align="center"><HR size="2"><FONT style="font-size : 11pt;">&nbsp; 
+[<A href="$HomeUrl">ホーム</A>] 
+[<A href="javascript:history.back()"><FONT color="blue">戻る</FONT></A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}">新着順</A>] 
+[<A href="$BaseDir/$MainCGI?No=$FORM{No}&Num=$FORM{Num}">ニュース表\示</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=lc&No=$FORM{No}&Num=$FORM{Num}">過去ログ</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=uo&No=$FORM{No}&Num=$FORM{Num}">ユーザー設定</A>] 
+[<A href="$BaseDir/$MainCGI?cmd=ac&No=$FORM{No}&Num=$FORM{Num}">管理室</A>]
+</FONT><HR size="2"></TD></TR></TABLE></CENTER></BODY></HTML>
+<!---ＨＴＭＬ--->
+1;

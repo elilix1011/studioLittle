@@ -1,0 +1,76 @@
+@charset "Shift_jis";
+
+/*========================================
+ 
+==========================================*/
+body {
+	font-size: 85%;
+	background-color: #faf5d3;
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+div#base {
+	width: 720px;
+	margin: 15px auto;
+	padding: 15px;
+	background: #FFFFFF;
+}
+
+div#main {
+	padding: 10px;
+	border: solid 1px #CCCCCC;
+}
+
+
+/*========================================
+ フォームのテーブル関係
+==========================================*/
+#form_area th {
+	width: 170px;
+	background: #F2F2F2;
+	font-weight: normal;
+	text-align: left;
+}
+#form_area td {
+	background: #FFFFFF;
+}
+
+/* 必須マーク */
+.hissu {
+	color: #FF0000;
+}
+/* ポイント */
+.point {
+	color: #FF6699;
+}
+
+/*========================================
+ 上部メッセージ欄
+==========================================*/
+div.top_mes {
+	padding: 5px;
+	background-color: #F7CFBD;
+}
+
+
+/*========================================
+ エラーメッセージ関係
+==========================================*/
+div#error_area {
+	margin: 20px;
+	padding: 5px;
+	border: solid 1px #C00;
+	display: none;
+}
+
+#error_area .attention {
+	font-weight: bold;
+	margin: 0px 0px 5px 0px;
+	padding: 5px;
+	background: #FFCC00;
+	color: #FF0000;
+}

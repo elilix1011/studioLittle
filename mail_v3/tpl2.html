@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>お申し込み・お問い合わせ確認</title>
+</head>
+
+<body>
+<div id="base">
+
+<p><img src="../module/images/title_contact.jpg" width="250" height="50" alt="お問い合わせ" /></p>
+
+<div id="main">
+
+<div class="top_mes">■ 記入内容をご確認の後、「この内容で送信する」ボタンを押して下さい。</div>
+
+<div id="form_area">
+<form action="mail.cgi" method="post">
+<input type="hidden" name="mode" value="send" />
+<!-- ↓は消さないでください -->
+_%param%_
+
+<p>以下の内容で送信致します。<br />
+誤りが無ければ送信ボタンをクリックしてください。</p>
+
+<table border="0" cellspacing="1" cellpadding="5">
+  <tr>
+    <th><span class="hissu">※</span> お名前</th>
+    <td>_%name%_</td>
+  </tr>
+  <tr>
+    <th><span class="hissu">※</span> フリガナ</th>
+    <td>_%kana%_</td>
+  </tr>
+  <tr>
+    <th><span class="hissu">※</span> メールアドレス</th>
+    <td>_%email%_</td>
+  </tr>
+  <tr>
+    <th> お電話番号</th>
+    <td>（電話でご連絡をご希望の方はご記入ください）<br />
+        _%tel%_</td>
+  </tr>
+
+  <tr>
+    <th>ご本人が受講希望ですか？</th>
+    <td> _%who%_
+      　</td>
+  </tr>
+  <tr>
+    <th>興味をお持ちのクラスはどれですか？</th>
+    <td> _%class%_
+      </label>
+      　</td>
+  </tr>
+  <tr>
+    <th rowspan="2">お申し込み・<br />
+      お問い合わせ内容</th>
+    <td>_%contact%_</td>
+  </tr>
+  <tr>
+    <td>_%message%_</td>
+  </tr>
+</table>
+<div style="height:20px; padding:20px 0px;">
+<p style="float:left;"><input type="submit" value="この内容で送信する" /></p>
+<p style="float:right;"><input type="button" value="&lt;&lt; 入力ページへ戻る" onclick="history.back();" /></p>
+</div>
+
+<!-- ↓著作権表示です。削除はできません。削除をご希望の場合はシェアウェアCGIのご購入をお願いいたします。 -->
+_%copyright%_
+<!-- ↑著作権表示です。削除はできません。削除をご希望の場合はシェアウェアCGIのご購入をお願いいたします。 -->
+
+</form>
+
+</div>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

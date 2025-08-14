@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>お申込み確認</title>
+</head>
+
+<body>
+<div id="base">
+
+<div id="title">ダイエットヨガ講座　ダイエットヨガ体験レッスン申込み</div>
+
+<div id="main">
+
+<div class="top_mes">■ 記入内容をご確認の後、「この内容で送信する」ボタンを押して下さい。</div>
+
+<div id="form_area">
+<form action="mail.cgi" method="post">
+<input type="hidden" name="mode" value="send" />
+<!-- ↓は消さないでください -->
+_%param%_
+
+<p>以下の内容で送信いたします。<br />
+誤りが無ければ送信ボタンをクリックしてください。</p>
+
+<table border="0" cellspacing="1" cellpadding="5">
+  <tr>
+  <th><span class="form-must">必須</span> お問い合わせ種別<br />
+    　　　（複数回答可）</th>
+  <td>_%category%_</td>
+ </tr>
+  <tr>
+    <th>体験会申し込みの方</th>
+    <td><p>参加希望の回：　_%datea%_<br />
+      参加希望の日にち：　_%date%_</p></td>
+  </tr>
+  <tr>
+    <th><span class="form-must">必須</span> お名前</th>
+    <td>_%name%_</td>
+  </tr>
+  <tr>
+    <th><span class="form-must">必須</span> フリガナ</th>
+    <td>_%kana%_</td>
+  </tr>
+  <tr>
+    <th><span class="form-must">必須</span> ご住所</th>
+    <td>_%address%_</td>
+  </tr>
+  <tr>
+    <th><span class="form-must">必須</span> メールアドレス</th>
+    <td>_%email%_</td>
+  </tr>
+  
+  <tr>
+    <th>お問い合わせ内容</th>
+    <td>_%message%_</td>
+  </tr>
+</table>
+<div style="height:20px; padding:20px 0px;">
+<div class="textcenter">
+  <p class="submitbtn"><input type="submit" value="この内容で送信する" /></p>
+</div>
+
+<p style="float:right;"><input type="button" value="&lt;&lt; 入力ページへ戻る" onclick="history.back();" /></p>
+
+<!-- ↓著作権表示です。削除はできません。削除をご希望の場合はシェアウェアCGIのご購入をお願いいたします。 -->
+_%copyright%_
+<!-- ↑著作権表示です。削除はできません。削除をご希望の場合はシェアウェアCGIのご購入をお願いいたします。 -->
+
+</form>
+
+</div>
+
+
+</div>
+
+</div>
+
+</body>
+</html>
