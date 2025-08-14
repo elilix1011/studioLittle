@@ -49,3 +49,6 @@ wp-content/cache/
 
 # Server-specific files
 .htaccess
+
+# ローカル開発用ファイル（本番にアップロードしない）
+contact/form-local.html

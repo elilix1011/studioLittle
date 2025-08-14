@@ -4,147 +4,147 @@
 #\\  Creation company : DIC Co.,Ltd.
 #\\  http://www.d-ic.com/
 #\\  DIC-Studio. Mail_v3 Version:1.01 (2008/11/07)
-#\\  Copyright (C) DIC All Rights Reserved. ‚±‚ÌƒXƒNƒŠƒvƒg‚ÌÄ”z•z‚È‚Ç‚ð‹ÖŽ~‚µ‚Ü‚·.
+#\\  Copyright (C) DIC All Rights Reserved. ï¿½ï¿½ï¿½ÌƒXï¿½Nï¿½ï¿½ï¿½vï¿½gï¿½ÌÄ”zï¿½zï¿½È‚Ç‚ï¿½ï¿½ÖŽ~ï¿½ï¿½ï¿½Ü‚ï¿½.
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 require "./jcode.pl";
 require "./stdio.pl";
 
-##*****<< Ý’u•û–@ >>******************************************************************************
+##*****<< ï¿½Ý’uï¿½ï¿½ï¿½@ >>******************************************************************************
 ##
-## ¦‚b‚f‚hƒtƒ@ƒCƒ‹‚Ì‰ŠúÝ’è‚ð‚¨Žg‚¢‚ÌŠÂ‹«‚É‡‚í‚¹‚ÄƒJƒXƒ^ƒ}ƒCƒY‚µ‚Ä‚­‚¾‚³‚¢B
-## ¦‚¨Žg‚¢‚ÌƒT[ƒo‚É‚æ‚Á‚Ä‚Í‰º‚Ìƒtƒ@ƒCƒ‹\¬‚Å‚Í“®ì‚µ‚È‚¢ê‡‚ª‚ ‚è‚Ü‚·B
-##   ‚»‚ÌÛ‚ÍƒT[ƒoŠÇ—ŽÒ‚É‚¨–â‚¢‡‚í‚¹‚­‚¾‚³‚¢B
-## ¦"[]"“à‚Ì”Žš‚Íƒp[ƒ~ƒbƒVƒ‡ƒ“‚Å‚·B
+## ï¿½ï¿½ï¿½bï¿½fï¿½hï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½Ý’ï¿½ï¿½ï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ÌŠÂ‹ï¿½ï¿½Éï¿½ï¿½í‚¹ï¿½ÄƒJï¿½Xï¿½^ï¿½}ï¿½Cï¿½Yï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
+## ï¿½ï¿½ï¿½ï¿½ï¿½gï¿½ï¿½ï¿½ÌƒTï¿½[ï¿½oï¿½É‚ï¿½ï¿½ï¿½Ä‚Í‰ï¿½ï¿½Ìƒtï¿½@ï¿½Cï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½Å‚Í“ï¿½ï¿½ì‚µï¿½È‚ï¿½ï¿½ê‡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B
+##   ï¿½ï¿½ï¿½ÌÛ‚ÍƒTï¿½[ï¿½oï¿½Ç—ï¿½ï¿½Ò‚É‚ï¿½ï¿½â‚¢ï¿½ï¿½ï¿½í‚¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
+## ï¿½ï¿½"[]"ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½Íƒpï¿½[ï¿½~ï¿½bï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½B
 ##
 ## public_html/
 ##  |
 ##  +-- mail_v3/
-##        |    mail.cgi   [755/700]  ƒ[ƒ‹‘—M–{‘Ì‚b‚f‚h
+##        |    mail.cgi   [755/700]  ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Mï¿½{ï¿½Ì‚bï¿½fï¿½h
 ##        |    jcode.pl
 ##        |    stdio.pl
-##        |    tpl1.html   “ü—Íƒy[ƒW
-##        |    tpl2.html   Šm”Fƒy[ƒW
-##        |    tpl3.html   Š®—¹ƒy[ƒW
-##        |    mailtpl_adm.txt   ƒ[ƒ‹ƒeƒ“ƒvƒŒ[ƒgiŠÇ—ŽÒˆ¶‚Äj
-##        |    mailtpl_usr.txt   ƒ[ƒ‹ƒeƒ“ƒvƒŒ[ƒgiƒ†[ƒUˆ¶‚Äj
+##        |    tpl1.html   ï¿½ï¿½ï¿½Íƒyï¿½[ï¿½W
+##        |    tpl2.html   ï¿½mï¿½Fï¿½yï¿½[ï¿½W
+##        |    tpl3.html   ï¿½ï¿½ï¿½ï¿½ï¿½yï¿½[ï¿½W
+##        |    mailtpl_adm.txt   ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½ï¿½ï¿½vï¿½ï¿½ï¿½[ï¿½gï¿½iï¿½Ç—ï¿½ï¿½Òˆï¿½ï¿½Äj
+##        |    mailtpl_usr.txt   ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½ï¿½ï¿½vï¿½ï¿½ï¿½[ï¿½gï¿½iï¿½ï¿½ï¿½[ï¿½Uï¿½ï¿½ï¿½Äj
 ##        |    attention.gif
 ##        |    style.css
 ##        |    index.html
 ##        |
 ##        +-- data/     [777/705]
-##        |      data.cgi  [666/600]   “ü—Í“à—e•Û‘¶ƒtƒ@ƒCƒ‹
+##        |      data.cgi  [666/600]   ï¿½ï¿½ï¿½Í“ï¿½ï¿½eï¿½Û‘ï¿½ï¿½tï¿½@ï¿½Cï¿½ï¿½
 ##        |      index.html
 ##        |
 ##        +-- tmp/      [777/705]
 ##               index.html
 ##
-## ¦“ü—Íƒy[ƒW‚Í
-## http://Ý’u‚µ‚½URL/mail_v3/mail.cgi
-## ‚Æ‚È‚è‚Ü‚·B
-## tpl1.html ‚É’¼ÚƒAƒNƒZƒX‚·‚é‚ÆA³‚µ‚­“®ì‚µ‚Ü‚¹‚ñ‚Ì‚ÅA‚²’ˆÓ‚­‚¾‚³‚¢B
+## ï¿½ï¿½ï¿½ï¿½ï¿½Íƒyï¿½[ï¿½Wï¿½ï¿½
+## http://ï¿½Ý’uï¿½ï¿½ï¿½ï¿½URL/mail_v3/mail.cgi
+## ï¿½Æ‚È‚ï¿½Ü‚ï¿½ï¿½B
+## tpl1.html ï¿½É’ï¿½ï¿½ÚƒAï¿½Nï¿½Zï¿½Xï¿½ï¿½ï¿½ï¿½ÆAï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì‚µï¿½Ü‚ï¿½ï¿½ï¿½Ì‚ÅAï¿½ï¿½ï¿½ï¿½ï¿½Ó‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
 ##
 ##
-##*****<< ƒo[ƒWƒ‡ƒ“ƒAƒbƒvî•ñ >>******************************************************************
+##*****<< ï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½bï¿½vï¿½ï¿½ï¿½ >>******************************************************************
 ##
 ## 2008/11/07 .....Ver1.01
-##   Eƒ`ƒFƒbƒNƒ{ƒbƒNƒXAƒ‰ƒWƒIƒ{ƒ^ƒ“‚ÌƒtƒH[ƒ€ƒ^ƒO‚ð•K{§ŒÀ‚µ‚½Û‚É³‚µ‚­“®ì‚µ‚È‚¢•s‹ï‡‚ðC³
+##   ï¿½Eï¿½`ï¿½Fï¿½bï¿½Nï¿½{ï¿½bï¿½Nï¿½Xï¿½Aï¿½ï¿½ï¿½Wï¿½Iï¿½{ï¿½^ï¿½ï¿½ï¿½Ìƒtï¿½Hï¿½[ï¿½ï¿½ï¿½^ï¿½Oï¿½ï¿½Kï¿½{ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Û‚Éï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì‚µï¿½È‚ï¿½ï¿½sï¿½ï‡ï¿½ï¿½ï¿½Cï¿½ï¿½
 ##
 ##
 ##*************************************************************************************************
 
 
 ##=====================================
-##      ‰ŠúÝ’è•”•ª ‚±‚±‚©‚ç         =
+##      ï¿½ï¿½ï¿½ï¿½ï¿½Ý’è•”ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½         =
 ##=====================================
 
-# ŠÇ—ŽÒ–¼Eƒ[ƒ‹ƒAƒhƒŒƒX
+# ï¿½Ç—ï¿½ï¿½Ò–ï¿½ï¿½Eï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Aï¿½hï¿½ï¿½ï¿½X
 
-$adm_name = 'Studio little';	# ŠÇ—ŽÒ–¼
-$adm_email = 'little.group.little@gmail.com';	# ƒ[ƒ‹ƒAƒhƒŒƒXiŽóMæ‚É‚È‚è‚Ü‚·j
-#$adm_email = 'aika_i2005@yahoo.co.jp';	# ƒ[ƒ‹ƒAƒhƒŒƒXiŽóMæ‚É‚È‚è‚Ü‚·j
-# ƒZƒŒƒNƒgƒƒjƒ…[‚ÌƒŠƒXƒg
-# “ü—Íƒy[ƒW‚ÉƒZƒŒƒNƒgƒƒjƒ…[‚ª‚ ‚éê‡A‚»‚Ì name’liname="xxx" ‚Ì xxx ‚Ì•”•ªj‚ðŽw’è‚µ‚Ä‚­‚¾‚³‚¢B
+$adm_name = 'Studio little';	# ï¿½Ç—ï¿½ï¿½Ò–ï¿½
+$adm_email = 'little.group.little@gmail.com';	# ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Aï¿½hï¿½ï¿½ï¿½Xï¿½iï¿½ï¿½Mï¿½ï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½j
+#$adm_email = 'aika_i2005@yahoo.co.jp';	# ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Aï¿½hï¿½ï¿½ï¿½Xï¿½iï¿½ï¿½Mï¿½ï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½j
+# ï¿½Zï¿½ï¿½ï¿½Nï¿½gï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[ï¿½Ìƒï¿½ï¿½Xï¿½g
+# ï¿½ï¿½ï¿½Íƒyï¿½[ï¿½Wï¿½ÉƒZï¿½ï¿½ï¿½Nï¿½gï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‡ï¿½Aï¿½ï¿½ï¿½ï¿½ nameï¿½lï¿½iname="xxx" ï¿½ï¿½ xxx ï¿½Ì•ï¿½ï¿½ï¿½ï¿½jï¿½ï¿½ï¿½wï¿½è‚µï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
 
 @sel_list = (
 	'who','class','what','contact'
 );
 
 
-# “ü—Í•K{€–Ú
-# u'name’l' => 'ƒGƒ‰[Žž‚ÌƒƒbƒZ[ƒW',v‚ÌŒ`‚ÅŽw’è‚µ‚Ä‚­‚¾‚³‚¢B
+# ï¿½ï¿½ï¿½Í•Kï¿½{ï¿½ï¿½ï¿½ï¿½
+# ï¿½u'nameï¿½l' => 'ï¿½Gï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Ìƒï¿½ï¿½bï¿½Zï¿½[ï¿½W',ï¿½vï¿½ÌŒ`ï¿½ÅŽwï¿½è‚µï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
 
 %hissu = (
-	'name'	=>	'y‚¨–¼‘Oz‚ð‚²“ü—Í‚­‚¾‚³‚¢B',
-	'kana'	=>	'yƒtƒŠƒKƒiz‚ð‚²“ü—Í‚­‚¾‚³‚¢B',
-	'email'	=>	'yƒ[ƒ‹ƒAƒhƒŒƒXz‚ð‚²“ü—Í‚­‚¾‚³‚¢B',
-	'message'	=>	'y‚¨\‚µž‚ÝE‚¨–â‚¢‡‚í‚¹“à—ez‚ð‚²“ü—Í‚­‚¾‚³‚¢B',
+	'name'	=>	'ï¿½yï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B',
+	'kana'	=>	'ï¿½yï¿½tï¿½ï¿½ï¿½Kï¿½iï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B',
+	'email'	=>	'ï¿½yï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Aï¿½hï¿½ï¿½ï¿½Xï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B',
+	'message'	=>	'ï¿½yï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ÝEï¿½ï¿½ï¿½â‚¢ï¿½ï¿½ï¿½í‚¹ï¿½ï¿½ï¿½eï¿½zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B',
 );
 
 
-# ƒ[ƒ‹‚ÌŒ–¼
+# ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ÌŒï¿½ï¿½ï¿½
 
-$subject_adm = 'ywebzstudio little ‚¨\‚µž‚ÝE‚¨–â‚¢‡‚í‚¹';	# ŠÇ—ŽÒˆ¶‚Äƒ[ƒ‹
-$subject_usr = '‚¨–â‚¢‡‚í‚¹‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚·';	# ƒ†[ƒUˆ¶‚Äƒ[ƒ‹
+$subject_adm = 'ï¿½ywebï¿½zstudio little ï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ÝEï¿½ï¿½ï¿½â‚¢ï¿½ï¿½ï¿½í‚¹';	# ï¿½Ç—ï¿½ï¿½Òˆï¿½ï¿½Äƒï¿½ï¿½[ï¿½ï¿½
+$subject_usr = 'ï¿½ï¿½ï¿½â‚¢ï¿½ï¿½ï¿½í‚¹ï¿½ï¿½ï¿½è‚ªï¿½Æ‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½';	# ï¿½ï¿½ï¿½[ï¿½Uï¿½ï¿½ï¿½Äƒï¿½ï¿½[ï¿½ï¿½
 
 
-# “ü—Í“à—e•Û‘¶ƒtƒ@ƒCƒ‹
-# ‚²—˜—pŽž‚ÍAFTPƒ\ƒtƒg‚Åƒ_ƒEƒ“ƒ[ƒh‚µAŠg’£Žq‚ð .csv ‚É•ÏX‚µ‚½Œã‚É‚²—˜—p‚­‚¾‚³‚¢B
-# ’~Ï•Û‘¶‚µ‚Ä‚¨‚è‚Ü‚·‚Ì‚ÅA—e—Ê‚É‹C‚ð•t‚¯‚Ä‚­‚¾‚³‚¢B
+# ï¿½ï¿½ï¿½Í“ï¿½ï¿½eï¿½Û‘ï¿½ï¿½tï¿½@ï¿½Cï¿½ï¿½
+# ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½ÍAFTPï¿½\ï¿½tï¿½gï¿½Åƒ_ï¿½Eï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½hï¿½ï¿½ï¿½Aï¿½gï¿½ï¿½ï¿½qï¿½ï¿½ .csv ï¿½É•ÏXï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
+# ï¿½~ï¿½Ï•Û‘ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½Ì‚ÅAï¿½eï¿½Ê‚É‹Cï¿½ï¿½tï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
 
 $datafile = './data/data.cgi';
 
 
 
-# “ü—Í“à—eˆêŽž•Û‘¶—pƒfƒBƒŒƒNƒgƒŠ ¦/‚ÅI‚í‚ç‚È‚¢
+# ï¿½ï¿½ï¿½Í“ï¿½ï¿½eï¿½êŽžï¿½Û‘ï¿½ï¿½pï¿½fï¿½Bï¿½ï¿½ï¿½Nï¿½gï¿½ï¿½ ï¿½ï¿½/ï¿½ÅIï¿½ï¿½ï¿½È‚ï¿½
 $input_dir = './tmp';
 
-# ƒeƒ“ƒvƒŒ[ƒgHTML
-$html_form1 = './tpl1.html';	# “ü—ÍƒtƒH[ƒ€
-$html_form2 = './tpl2.html';	# “ü—ÍŠm”F
-$html_form3 = './tpl3.html';	# ‘—MŠ®—¹
+# ï¿½eï¿½ï¿½ï¿½vï¿½ï¿½ï¿½[ï¿½gHTML
+$html_form1 = './tpl1.html';	# ï¿½ï¿½ï¿½Íƒtï¿½Hï¿½[ï¿½ï¿½
+$html_form2 = './tpl2.html';	# ï¿½ï¿½ï¿½ÍŠmï¿½F
+$html_form3 = './tpl3.html';	# ï¿½ï¿½ï¿½Mï¿½ï¿½ï¿½ï¿½
 
-# ƒ[ƒ‹ƒeƒ“ƒvƒŒ[ƒg
-$form_mail1 = './mailtpl_adm.txt';	# ŠÇ—ŽÒˆ¶
-$form_mail2 = './mailtpl_usr.txt';	# ƒ†[ƒUˆ¶
+# ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½eï¿½ï¿½ï¿½vï¿½ï¿½ï¿½[ï¿½g
+$form_mail1 = './mailtpl_adm.txt';	# ï¿½Ç—ï¿½ï¿½Òˆï¿½
+$form_mail2 = './mailtpl_usr.txt';	# ï¿½ï¿½ï¿½[ï¿½Uï¿½ï¿½
 
-# ƒƒbƒNƒfƒBƒŒƒNƒgƒŠ
+# ï¿½ï¿½ï¿½bï¿½Nï¿½fï¿½Bï¿½ï¿½ï¿½Nï¿½gï¿½ï¿½
 $lock = './tmp';
 
-# ŒÃ‚¢u“ü—Íî•ñ‚ð•Û‘¶‚µ‚½ƒtƒ@ƒCƒ‹v‚ðíœ‚·‚éŠúŒÀ ¦•b‚ÅŽw’è
+# ï¿½Ã‚ï¿½ï¿½uï¿½ï¿½ï¿½Íï¿½ï¿½ï¿½Û‘ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½vï¿½ï¿½ï¿½íœï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½bï¿½ÅŽwï¿½ï¿½
 $expires = '259200';
 
-# Žž·iƒOƒŠƒjƒbƒW•W€Žž‰p‘ƒƒ“ƒhƒ“j‚ð•b‚ÅŽw’è
+# ï¿½ï¿½ï¿½ï¿½ï¿½iï¿½Oï¿½ï¿½ï¿½jï¿½bï¿½Wï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½hï¿½ï¿½ï¿½jï¿½ï¿½bï¿½ÅŽwï¿½ï¿½
 $time_difference = '32400';
 
-# ƒNƒbƒL[ID
+# ï¿½Nï¿½bï¿½Lï¿½[ID
 $cookie_id = 'MyCookie';
 
 
 ##=====================================
-##      ‰ŠúÝ’è•”•ª ‚±‚±‚Ü‚Å         =
+##      ï¿½ï¿½ï¿½ï¿½ï¿½Ý’è•”ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½         =
 ##=====================================
 
 
 
-#             ‚±‚±‚©‚ç‰º‚ðC³‚µ‚½ê‡‚É‚ÍƒTƒ|[ƒg‘ÎÛŠO‚É‚È‚è‚Ü‚·B‚²’ˆÓ‚­‚¾‚³‚¢B                               
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç‰ºï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê‡ï¿½É‚ÍƒTï¿½|ï¿½[ï¿½gï¿½ÎÛŠOï¿½É‚È‚ï¿½Ü‚ï¿½ï¿½Bï¿½ï¿½ï¿½ï¿½ï¿½Ó‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 ##=====================================
-## ƒf[ƒ^‚ðŽó‚¯Žæ‚é
+## ï¿½fï¿½[ï¿½^ï¿½ï¿½ï¿½ó‚¯Žï¿½ï¿½
 ##=====================================
 $separator = ' / ';
 %param = ();
-@keys = stdio::getFormData(\%param, "1", "SJIS", $separator, "", "sjis");
+@keys = stdio::getFormData(\%param, "1", "UTF8", $separator, "", "utf8");
 @keys = grep(!$seen{$_}++, @keys);
 
 
 ##=====================================
-## ƒNƒbƒL[‚ð“Ç‚Ýž‚Þ
+## ï¿½Nï¿½bï¿½Lï¿½[ï¿½ï¿½Ç‚Ýï¿½ï¿½ï¿½
 ##=====================================
 %COOKIE = ();
 stdio::getCookie(\%COOKIE, $cookie_id);
 if(!$COOKIE{'id'}){
-	if($param{'mode'}){ &error('ƒGƒ‰[','ƒNƒbƒL[‚ª“Ç‚Ýž‚ß‚Ü‚¹‚ñ‚Å‚µ‚½B“ü—ÍƒtƒH[ƒ€‚É–ß‚Á‚Ä‚­‚¾‚³‚¢B'); }
+	if($param{'mode'}){ &error('ï¿½Gï¿½ï¿½ï¿½[','ï¿½Nï¿½bï¿½Lï¿½[ï¿½ï¿½ï¿½Ç‚Ýï¿½ï¿½ß‚Ü‚ï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½ï¿½Íƒtï¿½Hï¿½[ï¿½ï¿½ï¿½É–ß‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B'); }
 	
 	$time = time;
 	$random = stdio::getRandomString(4);
@@ -153,13 +153,13 @@ if(!$COOKIE{'id'}){
 
 
 ##=====================================
-## “ü—Íî•ñ•Û‘¶ƒtƒ@ƒCƒ‹
+## ï¿½ï¿½ï¿½Íï¿½ï¿½Û‘ï¿½ï¿½tï¿½@ï¿½Cï¿½ï¿½
 ##=====================================
 $input_datafile = "$input_dir/$COOKIE{'id'}.cgi";
 
 
 ##=====================================
-## ŒÃ‚¢“ü—Íî•ñ•Û‘¶ƒtƒ@ƒCƒ‹‚ðíœ‚·‚é
+## ï¿½Ã‚ï¿½ï¿½ï¿½ï¿½Íï¿½ï¿½Û‘ï¿½ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½íœï¿½ï¿½ï¿½ï¿½
 ##=====================================
 foreach(glob($input_dir."/*.cgi")){
 	@stat = stat;
@@ -171,11 +171,11 @@ foreach(glob($input_dir."/*.cgi")){
 
 
 
-#      ƒ‚[ƒh ‚È‚µ ‚±‚±‚©‚ç                                                             
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½[ï¿½h ï¿½È‚ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 if($param{'mode'} eq ''){
 
 ##=====================================
-## “ü—ÍƒGƒ‰[‚Ì•\Ž¦
+## ï¿½ï¿½ï¿½ÍƒGï¿½ï¿½ï¿½[ï¿½Ì•\ï¿½ï¿½
 ##=====================================
 if($param{'action'} eq 'err'){
 	if(-e $input_datafile){
@@ -185,24 +185,24 @@ if($param{'action'} eq 'err'){
 			
 			if($key eq 'email'){ $email = $val; }
 			
-			# •K{ƒ`ƒFƒbƒN
+			# ï¿½Kï¿½{ï¿½`ï¿½Fï¿½bï¿½N
 			if(($hissu{$key} and $val eq '') or ($hissu{$key} and $val eq 'dummy')){
 				$subst{'error_mes'} .= qq|<li>$hissu{$key}</li>|;
 				
-				# ƒ[ƒ‹•K{ƒ`ƒFƒbƒNÏ‚Ý
+				# ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Kï¿½{ï¿½`ï¿½Fï¿½bï¿½Nï¿½Ï‚ï¿½
 				$email_checked = 1;
 			}
 			
-			# ƒ[ƒ‹‚Ìƒ`ƒFƒbƒN
+			# ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Ìƒ`ï¿½Fï¿½bï¿½N
 			if($key eq 'email' and !$email_checked){
 				$string_result = &InputCheck($val, "1", "255");
 				if($string_result){
-					$subst{'error_mes'} .= qq|<li>yƒ[ƒ‹ƒAƒhƒŒƒXz‚Ì“ü—Í‚ðŒë‚Á‚Ä‚¢‚Ü‚·B</li>|;
+					$subst{'error_mes'} .= qq|<li>ï¿½yï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Aï¿½hï¿½ï¿½ï¿½Xï¿½zï¿½Ì“ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B</li>|;
 				}
 			}
 			if($key eq 'email2'){
 				if($email ne $val){
-					$subst{'error_mes'} .= qq|<li>yƒ[ƒ‹ƒAƒhƒŒƒXz‚Æyƒ[ƒ‹ƒAƒhƒŒƒXŠm”F—pz‚Ì“ü—Í‚ªˆÙ‚È‚Á‚Ä‚¢‚Ü‚·B</li>|;
+					$subst{'error_mes'} .= qq|<li>ï¿½yï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Aï¿½hï¿½ï¿½ï¿½Xï¿½zï¿½Æyï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Aï¿½hï¿½ï¿½ï¿½Xï¿½mï¿½Fï¿½pï¿½zï¿½Ì“ï¿½ï¿½Í‚ï¿½ï¿½Ù‚È‚ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B</li>|;
 				}
 			}
 		}
@@ -215,14 +215,14 @@ if($subst{'error_mes'}){
 
 
 ##=====================================
-## “ü—Íî•ñ‚ð•œŒ³
+## ï¿½ï¿½ï¿½Íï¿½ï¿½ð•œŒï¿½
 ##=====================================
-# ƒZƒŒƒNƒgƒƒjƒ…[‚ÌƒŠƒXƒg
+# ï¿½Zï¿½ï¿½ï¿½Nï¿½gï¿½ï¿½ï¿½jï¿½ï¿½ï¿½[ï¿½Ìƒï¿½ï¿½Xï¿½g
 foreach(@sel_list){
 	$sel{$_} = $_;
 }
 
-# •œŒ³
+# ï¿½ï¿½ï¿½ï¿½
 if(-e $input_datafile){
 	
 	foreach(&fileopen($input_datafile)){
@@ -247,27 +247,27 @@ if(-e $input_datafile){
 }
 
 foreach(@sel_list){
-	if(!$subst{$_}){ $subst{$_} = qq|<option value="" selected="selected">‚¨‘I‚Ñ‰º‚³‚¢</option>\n|; }
+	if(!$subst{$_}){ $subst{$_} = qq|<option value="" selected="selected">ï¿½ï¿½ï¿½Iï¿½Ñ‰ï¿½ï¿½ï¿½ï¿½ï¿½</option>\n|; }
 }
 
 
 ##=====================================
-## HTML¶¬
+## HTMLï¿½ï¿½ï¿½ï¿½
 ##=====================================
-$subst{'copyright'} = qq|<div style="clear:both; width:100%; text-align:right; font-size:12px;">- <a href="http://www.d-ic.com/" target="_blank">ƒ[ƒ‹‘—MCGIF DIC-Studio</a> -</div>|;
+$subst{'copyright'} = qq|<div style="clear:both; width:100%; text-align:right; font-size:12px;">- <a href="http://www.d-ic.com/" target="_blank">ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½MCGIï¿½F DIC-Studio</a> -</div>|;
 foreach(&fileopen($html_form1)){
 	if(/_%copyright%_/){
 		$c_flag = 1;
 		last;
 	}
 }
-if(!$c_flag){ &error('ƒGƒ‰[', '’˜ìŒ •\Ž¦‚ªíœ‚³‚ê‚Ä‚¢‚Ü‚·B'); }
+if(!$c_flag){ &error('ï¿½Gï¿½ï¿½ï¿½[', 'ï¿½ï¿½ï¿½ìŒ ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½íœï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B'); }
 
 $htmldata = &dicTag(&fileopen($html_form1));
 
 
 ##=====================================
-## ‚g‚s‚l‚ko—Í
+## ï¿½gï¿½sï¿½lï¿½kï¿½oï¿½ï¿½
 ##=====================================
 print "Content-type: text/html\n";
 
@@ -278,22 +278,22 @@ print <<"EOF";
 $htmldata
 EOF
 exit;
-}	# ƒ‚[ƒh ‚È‚µ ‚±‚±‚Ü‚Å
+}	# ï¿½ï¿½ï¿½[ï¿½h ï¿½È‚ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½
 
 
 
-#      ƒ‚[ƒh check ‚±‚±‚©‚ç                                                             
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½[ï¿½h check ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 elsif($param{'mode'} eq 'check'){
 
 ##=====================================
-## “ü—Íî•ñ•Û‘¶ƒtƒ@ƒCƒ‹‚É‘‚«ž‚Þ
+## ï¿½ï¿½ï¿½Íï¿½ï¿½Û‘ï¿½ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½Éï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ##=====================================
 foreach(@keys){
 	$param{$_} =~ s/\n/<br \/>/g;
 	push(@inputdata, "$_\t$param{$_}\n");
 }
 
-if(!open(DATA,">$input_datafile")){ stdio::unlock($lock); &error('ƒVƒXƒeƒ€ƒGƒ‰[',"“ü—Í“à—eˆêŽž•Û‘¶ƒtƒ@ƒCƒ‹‚ð¶¬‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B"); }
+if(!open(DATA,">$input_datafile")){ stdio::unlock($lock); &error('ï¿½Vï¿½Xï¿½eï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½[',"ï¿½ï¿½ï¿½Í“ï¿½ï¿½eï¿½êŽžï¿½Û‘ï¿½ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ð¶ï¿½ï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½ï¿½B"); }
 seek(DATA,0,0);
 print DATA @inputdata;
 truncate(DATA,tell(DATA));
@@ -301,7 +301,7 @@ close(DATA);
 
 
 ##=====================================
-## “ü—Íƒ`ƒFƒbƒN
+## ï¿½ï¿½ï¿½Íƒ`ï¿½Fï¿½bï¿½N
 ##=====================================
 foreach(keys %hissu){
 	if($param{$_} eq '' or $param{$_} eq 'dummy'){
@@ -328,7 +328,7 @@ if($error_mes){
 
 
 ##=====================================
-## ’uŠ·—p
+## ï¿½uï¿½ï¿½ï¿½p
 ##=====================================
 foreach(@keys){
 	@tmp = ();
@@ -336,7 +336,7 @@ foreach(@keys){
 	
 	$param{$_} =~ s/\n/<br \/>/g;
 	
-	# dummy‚Ìíœ
+	# dummyï¿½Ìíœ
 	my @param = split(/$separator/, $param{$_});
 	$dummy_cnt = 0;
 	$del_cnt = '';
@@ -358,22 +358,22 @@ foreach(@keys){
 
 
 ##=====================================
-## HTML¶¬
+## HTMLï¿½ï¿½ï¿½ï¿½
 ##=====================================
-$subst{'copyright'} = qq|<div style="clear:both; width:100%; text-align:right; font-size:12px;">- <a href="http://www.d-ic.com/" target="_blank">ƒ[ƒ‹‘—MCGIF DIC-Studio</a> -</div>|;
+$subst{'copyright'} = qq|<div style="clear:both; width:100%; text-align:right; font-size:12px;">- <a href="http://www.d-ic.com/" target="_blank">ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½MCGIï¿½F DIC-Studio</a> -</div>|;
 foreach(&fileopen($html_form2)){
 	if(/_%copyright%_/){
 		$c_flag = 1;
 		last;
 	}
 }
-if(!$c_flag){ &error('ƒGƒ‰[', '’˜ìŒ •\Ž¦‚ªíœ‚³‚ê‚Ä‚¢‚Ü‚·B'); }
+if(!$c_flag){ &error('ï¿½Gï¿½ï¿½ï¿½[', 'ï¿½ï¿½ï¿½ìŒ ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½íœï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B'); }
 
 $htmldata = &dicTag(&fileopen($html_form2));
 
 
 ##=====================================
-## ‚g‚s‚l‚ko—Í
+## ï¿½gï¿½sï¿½lï¿½kï¿½oï¿½ï¿½
 ##=====================================
 print <<"EOF";
 Content-type: text/html
@@ -381,26 +381,26 @@ Content-type: text/html
 $htmldata
 EOF
 exit;
-}	# ƒ‚[ƒh check ‚±‚±‚Ü‚Å
+}	# ï¿½ï¿½ï¿½[ï¿½h check ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½
 
 
 
-#      ƒ‚[ƒh send ‚±‚±‚©‚ç                                                             
+#ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½[ï¿½h send ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 elsif($param{'mode'} eq 'send'){
 
 ##=====================================
-## ƒƒbƒN
+## ï¿½ï¿½ï¿½bï¿½N
 ##=====================================
 if(!stdio::lock($lock)){ &error('ERROR','Busy!'); }
 
 
 ##=====================================
-## CSVƒtƒ@ƒCƒ‹‚É‘‚«ž‚Þ
+## CSVï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½Éï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ##=====================================
-if(!open(DATA,"+<$datafile")){ stdio::unlock($lock); &error('ƒVƒXƒeƒ€ƒGƒ‰[',"“ü—Í“à—e•Û‘¶ƒtƒ@ƒCƒ‹‚ð‘ž‚ÝƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B"); }
+if(!open(DATA,"+<$datafile")){ stdio::unlock($lock); &error('ï¿½Vï¿½Xï¿½eï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½[',"ï¿½ï¿½ï¿½Í“ï¿½ï¿½eï¿½Û‘ï¿½ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝƒIï¿½[ï¿½vï¿½ï¿½ï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½ï¿½B"); }
 @db = <DATA>;
 
-# Œ»Ý“úŽž
+# ï¿½ï¿½ï¿½Ý“ï¿½ï¿½ï¿½
 $subst{'send_date'} = $now_date = stdio::getTime("%yyyy-%mm-%dd %hh:%nn:%ss", $time_difference);
 
 foreach(@keys){
@@ -424,13 +424,13 @@ close(DATA);
 
 
 ##=====================================
-## ƒAƒ“ƒƒbƒN
+## ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½bï¿½N
 ##=====================================
 stdio::unlock($lock);
 
 
 ##=====================================
-## ƒ[ƒ‹•¶–Ê’uŠ·—p
+## ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Ê’uï¿½ï¿½ï¿½p
 ##=====================================
 foreach(@keys){
 	$param{$_} =~ s/&lt;br \/&gt;/\n/g;
@@ -441,14 +441,14 @@ foreach(@keys){
 
 
 ##=====================================
-## ƒ[ƒ‹•¶Í‚ð¶¬
+## ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ð¶ï¿½
 ##=====================================
 $mailbody_adm = &dicTag(&fileopen($form_mail1));
 $mailbody_usr = &dicTag(&fileopen($form_mail2));
 
 
 ##=====================================
-## ƒ[ƒ‹‘—MiŠÇ—ŽÒˆ¶j
+## ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Mï¿½iï¿½Ç—ï¿½ï¿½Òˆï¿½ï¿½j
 ##=====================================
 %header = (
 	'To'	=> $adm_name." <".$adm_email.">",
@@ -472,7 +472,7 @@ stdio::sendmail(\%header, $mailbody_adm);
 
 
 ##=====================================
-## ƒ[ƒ‹‘—Miƒ†[ƒUˆ¶j
+## ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Mï¿½iï¿½ï¿½ï¿½[ï¿½Uï¿½ï¿½ï¿½j
 ##=====================================
 %header = (
 	'To'	=> $param{'email'},
@@ -487,28 +487,28 @@ if($param{'email'}){
 
 
 ##=====================================
-## ˆêŽžƒtƒ@ƒCƒ‹íœ
+## ï¿½êŽžï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½íœ
 ##=====================================
 unlink $input_datafile;
 
 
 ##=====================================
-## HTML¶¬
+## HTMLï¿½ï¿½ï¿½ï¿½
 ##=====================================
-$subst{'copyright'} = qq|<div style="clear:both; width:100%; text-align:right; font-size:12px;">- <a href="http://www.d-ic.com/" target="_blank">ƒ[ƒ‹‘—MCGIF DIC-Studio</a> -</div>|;
+$subst{'copyright'} = qq|<div style="clear:both; width:100%; text-align:right; font-size:12px;">- <a href="http://www.d-ic.com/" target="_blank">ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½MCGIï¿½F DIC-Studio</a> -</div>|;
 foreach(&fileopen($html_form3)){
 	if(/_%copyright%_/){
 		$c_flag = 1;
 		last;
 	}
 }
-if(!$c_flag){ &error('ƒGƒ‰[', '’˜ìŒ •\Ž¦‚ªíœ‚³‚ê‚Ä‚¢‚Ü‚·B'); }
+if(!$c_flag){ &error('ï¿½Gï¿½ï¿½ï¿½[', 'ï¿½ï¿½ï¿½ìŒ ï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½íœï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B'); }
 
 $htmldata = &dicTag(&fileopen($html_form3));
 
 
 ##=====================================
-## ‚g‚s‚l‚ko—Í
+## ï¿½gï¿½sï¿½lï¿½kï¿½oï¿½ï¿½
 ##=====================================
 #print <<"EOF";
 #Content-type: text/plain
@@ -536,14 +536,14 @@ Content-type: text/html
 $htmldata
 EOF
 exit;
-}	# ƒ‚[ƒh send ‚±‚±‚Ü‚Å
+}	# ï¿½ï¿½ï¿½[ï¿½h send ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½
 
 
 
 
 
 ##=====================================
-## “ÁŽêƒ^ƒO‚Ì’u‚«Š·‚¦
+## ï¿½ï¿½ï¿½ï¿½^ï¿½Oï¿½Ì’uï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 ##=====================================
 # $htmldata = &dicTag(@html);
 sub dicTag # (@html)
@@ -561,16 +561,16 @@ sub dicTag # (@html)
 
 
 ##=====================================
-## “ü—Í•¶Žš‚Ìƒ`ƒFƒbƒN
+## ï¿½ï¿½ï¿½Í•ï¿½ï¿½ï¿½ï¿½Ìƒ`ï¿½Fï¿½bï¿½N
 ##=====================================
 sub InputCheck { # ($param{'email'}, $type ,$maxlength)
-	# $type  1=email  2=“d˜b‚âƒtƒ@ƒbƒNƒX“™
-	# $maxlength  Å‘åƒoƒCƒg”
+	# $type  1=email  2=ï¿½dï¿½bï¿½ï¿½tï¿½@ï¿½bï¿½Nï¿½Xï¿½ï¿½
+	# $maxlength  ï¿½Å‘ï¿½oï¿½Cï¿½gï¿½ï¿½
 	
-# ƒTƒ“ƒvƒ‹i‚dƒ[ƒ‹ƒ`ƒFƒbƒNj
+# ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½iï¿½dï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½`ï¿½Fï¿½bï¿½Nï¿½j
 #$string_result = &InputCheck($emailaddress, "1", "255");
 #if($string_result){
-#	&error('error','Eƒ[ƒ‹ƒAƒhƒŒƒX‚Ì“ü—Í‚ðŒë‚Á‚Ä‚¢‚Ü‚·B');
+#	&error('error','Eï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Aï¿½hï¿½ï¿½ï¿½Xï¿½Ì“ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B');
 #}
 	
 	local($string, $type, $maxlength) = @_;
@@ -592,7 +592,7 @@ sub InputCheck { # ($param{'email'}, $type ,$maxlength)
 
 
 ##=====================================
-## ƒtƒ@ƒCƒ‹ƒI[ƒvƒ“
+## ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½Iï¿½[ï¿½vï¿½ï¿½
 ##=====================================
 sub fileopen { # ($filepath)
 	local($file) = @_;
@@ -600,7 +600,7 @@ sub fileopen { # ($filepath)
 	
 	if(!open(IN,$file)){
 		stdio::unlock($lock);
-		&error('ƒVƒXƒeƒ€ƒGƒ‰[',"ƒtƒ@ƒCƒ‹i$filej‚ðƒI[ƒvƒ“‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B"); }
+		&error('ï¿½Vï¿½Xï¿½eï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½[',"ï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½i$fileï¿½jï¿½ï¿½ï¿½Iï¿½[ï¿½vï¿½ï¿½ï¿½Å‚ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½ï¿½B"); }
 	@array = <IN>;
 	close(IN);
 	
@@ -609,11 +609,11 @@ sub fileopen { # ($filepath)
 
 
 ##=====================================
-## ƒGƒ‰[•\Ž¦
+## ï¿½Gï¿½ï¿½ï¿½[ï¿½\ï¿½ï¿½
 ##=====================================
 sub error { # ($error_tile, $error_message)
 	
-	# ƒƒbƒN‰ðœ
+	# ï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½ï¿½
 	stdio::unlock($lock);
 	
 	print <<"END";
@@ -629,7 +629,7 @@ Content-type: text/html
 <style type="text/css">
 <!--
 body {
-	font-family: "Verdana", "Helvetica","‚l‚r ƒSƒVƒbƒN", "Osaka|“™•";
+	font-family: "Verdana", "Helvetica","ï¿½lï¿½r ï¿½Sï¿½Vï¿½bï¿½N", "Osakaï¿½|ï¿½ï¿½ï¿½ï¿½";
 	font-size: 12px;
 	color: #333333;
 	background-color: #FFFFFF;
@@ -683,7 +683,7 @@ border-left-color: #FFCC00;
       </table>
       <table border="0" align="center" cellpadding="20" cellspacing="0">
        <tr>
-        <td><a href="javascript:history.back()">ƒRƒ`ƒ‰‚ðƒNƒŠƒbƒN</a>‚·‚é‚©Aƒuƒ‰ƒEƒU‚Ì–ß‚éƒ{ƒ^ƒ“‚ðƒNƒŠƒbƒN‚µ‚Ä‘O‚Ì‰æ–Ê‚ÉˆÚ“®‚µ‚Ä‚­‚¾‚³‚¢B</td>
+        <td><a href="javascript:history.back()">ï¿½Rï¿½`ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½bï¿½N</a>ï¿½ï¿½ï¿½é‚©ï¿½Aï¿½uï¿½ï¿½ï¿½Eï¿½Uï¿½Ì–ß‚ï¿½{ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½Nï¿½ï¿½ï¿½bï¿½Nï¿½ï¿½ï¿½Ä‘Oï¿½Ì‰ï¿½Ê‚ÉˆÚ“ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B</td>
        </tr>
       </table>
      </td>

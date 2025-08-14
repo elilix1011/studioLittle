@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お申し込み・お問い合わせ - Studio Little</title>
+    <link rel="stylesheet" href="../module/css/modern.css" />
+    <style>
+      .contact-form {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        width: 100%;
+        padding: 0.8rem;
+        border: 2px solid #e1e5e9;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus,
+      .form-group select:focus {
+        outline: none;
+        border-color: #91b222;
+      }
+
+      .required {
+        color: #ff6b6b;
+      }
+
+      .checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .checkbox-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .checkbox-item input[type="checkbox"] {
+        width: auto;
+      }
+
+      .radio-group {
+        display: flex;
+        gap: 2rem;
+        margin-top: 0.5rem;
+      }
+
+      .radio-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .radio-item input[type="radio"] {
+        width: auto;
+      }
+
+      .submit-btn {
+        background: linear-gradient(45deg, #91b222, #7a9a1d);
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(145, 178, 34, 0.3);
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(145, 178, 34, 0.4);
+      }
+
+      .class-category {
+        background: #f8f9fa;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+
+      .class-category h4 {
+        margin: 0 0 0.5rem 0;
+        color: #91b222;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-form">
+      <h1>お申し込み・お問い合わせ</h1>
+      <p>下記のお問い合わせフォームにご記入の上、送信してください。</p>
+
+      <form
+        action="mailto:little.group.little@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <div class="form-group">
+          <label><span class="required">※</span> お名前</label>
+          <input type="text" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label><span class="required">※</span> フリガナ</label>
+          <input type="text" name="kana" required />
+        </div>
+
+        <div class="form-group">
+          <label><span class="required">※</span> メールアドレス</label>
+          <input type="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label>お電話番号</label>
+          <input type="tel" name="tel" />
+        </div>
+
+        <div class="form-group">
+          <label>ご本人様または保護者様ですか？</label>
+          <div class="radio-group">
+            <div class="radio-item">
+              <input
+                type="radio"
+                name="who"
+                value="体験希望者本人"
+                id="who-self"
+              />
+              <label for="who-self">体験希望者本人</label>
+            </div>
+            <div class="radio-item">
+              <input
+                type="radio"
+                name="who"
+                value="お子様の保護者"
+                id="who-parent"
+              />
+              <label for="who-parent">お子様の保護者</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>体験を希望されるクラスはどちらですか？</label>
+
+          <div class="class-category">
+            <h4>KIDS DANCE・HIPHOP</h4>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="class"
+                  value="KIDS幼児・低学年クラス"
+                  id="kids-young"
+                />
+                <label for="kids-young">幼児・低学年クラス</label>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="class"
+                  value="KIDS小学生クラス"
+                  id="kids-elementary"
+                />
+                <label for="kids-elementary">小学生クラス</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="class-category">
+            <h4>バレエ・オープンクラス</h4>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="class"
+                  value="バレエ・オープンクラス幼児クラス"
+                  id="ballet-young"
+                />
+                <label for="ballet-young">幼児クラス</label>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="class"
+                  value="バレエ・オープンクラス小学生クラス"
+                  id="ballet-elementary"
+                />
+                <label for="ballet-elementary">小学生クラス</label>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="class"
+                  value="バレエ・オープンクラス大人クラス"
+                  id="ballet-adult"
+                />
+                <label for="ballet-adult">小学生以上クラス</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="class-category">
+            <h4>JAZZHIPHOP・HIPHOP・Free Style・GIRL'S HIPHOP</h4>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="class"
+                  value="JAZZHIPHOP大人クラス"
+                  id="jazz-adult"
+                />
+                <label for="jazz-adult">小学生以上クラス</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="class-category">
+            <h4>YOGA</h4>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="class"
+                  value="YOGA大人クラス"
+                  id="yoga-adult"
+                />
+                <label for="yoga-adult">大人クラス</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label
+            ><span class="required">※</span> お申し込み・お問い合わせ内容</label
+          >
+          <div class="radio-group">
+            <div class="radio-item">
+              <input
+                type="radio"
+                name="contact"
+                value="体験レッスンお申し込み"
+                id="contact-trial"
+                required
+              />
+              <label for="contact-trial">体験レッスンお申し込み</label>
+            </div>
+            <div class="radio-item">
+              <input
+                type="radio"
+                name="contact"
+                value="入会お申し込み"
+                id="contact-join"
+                required
+              />
+              <label for="contact-join">入会お申し込み</label>
+            </div>
+          </div>
+          <br />
+          <strong
+            >体験を希望される方の年齢もしくは学年・体験希望の日程・曜日・時間・人数をご記入下さい</strong
+          >
+          <textarea name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">送信する</button>
+      </form>
+    </div>
+  </body>
+</html>

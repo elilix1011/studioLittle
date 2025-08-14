@@ -1,20 +1,19 @@
-@charset "Shift_JIS";
-
+@charset "UTF-8";
 
 body {
-	background-color: #faf5d3;
-	color: #333;
-	font-size: 16px;
-	line-height: 1.7;
+  background-color: #faf5d3;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.7;
 }
 a:link {
-	color: #91B222;
+  color: #91b222;
 }
 a:hover {
-	color: #FF0000;
+  color: #ff0000;
 }
 a:visited {
-	color: #FF9900;
+  color: #ff9900;
 }
 
 /* --------------------------------------------------------
@@ -22,40 +21,40 @@ a:visited {
 -------------------------------------------------------- */
 
 #head {
-	width: 990px;
-	margin: 0 auto ;
-	position: relative;
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
 }
 #head .logo {
-	margin-top: 25px;
-	margin-right: 50px;
-	margin-bottom: 0;
-	margin-left: 15px;
+  margin-top: 25px;
+  margin-right: 50px;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
 
-#head a:nth-child(n+3){
-	padding: 0 10px ;
+#head a:nth-child(n + 3) {
+  padding: 0 10px;
 }
 
-#head img{
-	display: inline-block;
-	vertical-align: bottom;
+#head img {
+  display: inline-block;
+  vertical-align: bottom;
 }
 
-#head .icns{
-	position: absolute;
-	top: 10px;
-	right: 60px;
+#head .icns {
+  position: absolute;
+  top: 10px;
+  right: 60px;
 }
 
-#head .icns:last-child{
-	right: 20px;
+#head .icns:last-child {
+  right: 20px;
 }
 
-.importantbox{
-	padding: 10px;
-	margin-bottom: 20px;
-	border: 4px solid #52bdf3;
+.importantbox {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 4px solid #52bdf3;
 }
 
 /* --------------------------------------------------------
@@ -63,14 +62,14 @@ a:visited {
 -------------------------------------------------------- */
 
 #footer {
-	width: 990px;
-	margin-left: auto;
-	margin-top: 5px;
-	margin-right: auto;
-	margin-bottom: 10px;
-	font-size: 10px;
-	color: #bbd762;
-	text-align: right;
+  width: 990px;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-size: 10px;
+  color: #bbd762;
+  text-align: right;
 }
 
 /* --------------------------------------------------------
@@ -78,418 +77,487 @@ a:visited {
 -------------------------------------------------------- */
 
 #allcts {
-	background-color: #FFFFFF;
-	width: 980px;
-	margin: 0 auto;
-	border: 5px solid #bbd762;
+  background-color: #ffffff;
+  width: 980px;
+  margin: 0 auto;
+  border: 5px solid #bbd762;
 }
 #allcts #cts {
-	width: 840px;
-	margin-top: 70px;
-	margin-right: auto;
-	margin-bottom: 20px;
-	margin-left: auto;
+  width: 840px;
+  margin-top: 70px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
 }
 #allcts #cts #title {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 #subtitle {
-	margin-bottom: 20px;
-	background-image: url(../images/bg_subtitle.jpg);
-	height: 42px;
-	width: 820px;
-	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒE�CƒŠƒI", Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
-	font-size: 2.0em;
-	color: #7FA52D;
-	padding-left: 20px;
+  margin-bottom: 20px;
+  background-image: url(../images/bg_subtitle.jpg);
+  height: 42px;
+  width: 820px;
+  font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro", "ƒE�CƒŠƒI",
+    Meiryo, Osaka, "‚l‚r ‚oƒSƒVƒbƒN", "MS PGothic", sans-serif;
+  font-size: 2em;
+  color: #7fa52d;
+  padding-left: 20px;
 }
 #allcts #cts #photo {
-	margin-right: auto;
-	margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 #allcts #cts #photo img {
-	margin-right: 0px;
-	margin-bottom: 10px;
+  margin-right: 0px;
+  margin-bottom: 10px;
 }
-
 
 #allcts #cts #comment {
-	width: 760px;
-	padding: 20px;
-	margin-top: 0;
-	margin-right: auto;
-	margin-bottom: 0;
-	margin-left: auto;
+  width: 760px;
+  padding: 20px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 }
 #allcts #cts #comment p {
-	line-height: 25px;
-	font-weight: bold;
+  line-height: 25px;
+  font-weight: bold;
 }
 
-
 #allcts #cts .txt {
-	margin-top: 20px;
-	margin-right: 20px;
-	margin-bottom: 10px;
-	margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 #allcts #cts .txt2 {
-	margin-top: 20px;
-	margin-right: 20px;
-	margin-bottom: 50px;
-	margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  margin-left: 20px;
 }
 #allcts #cts .txt3 {
-	margin-top: 20px;
-	margin-right: 20px;
-	margin-bottom: 10px;
-	margin-left: 20px;
-	line-height: 150%;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  line-height: 150%;
 }
-
 
 #allcts #cts #sub {
-	margin-top: 20px;
-	margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 #allcts #cts #form {
-	width: 326px;
-	 margin:0 auto;
+  width: 326px;
+  margin: 0 auto;
 }
 
 #allcts #cts #comment ul li {
-	list-style-type: disc;
-	margin-left: 20px;
-	font-weight: bold;
+  list-style-type: disc;
+  margin-left: 20px;
+  font-weight: bold;
 }
-
-
 
 div.teacher {
   display: inline-grid;
 }
 
-
 /* --------------------------------------------------------
     ƒgƒbƒv
 -------------------------------------------------------- */
 #topmenu {
-	width: 990px;
-	margin: 0 auto;
-	margin-top: 20px;
+  width: 990px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 #topmenu .rb10 {
-	margin-right: 10px;
-	margin-bottom: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 #topmenu .b10 {
-	margin-bottom: 10px;
-} 
-#topmenu #leftbox{
-	width: 390px;
-	margin-right: 8px;
-	float: left;
+  margin-bottom: 10px;
 }
-#topmenu #rightbox{
-	width: 590px;
-	float: right;
+#topmenu #leftbox {
+  width: 390px;
+  margin-right: 8px;
+  float: left;
 }
-#topmenu #newstxt{
-	height: 145px;
-	margin-bottom: 10px;
-	background-color: #FFF;
-	font-size: 12px;
-	color: #666;
-	padding: 10px;
+#topmenu #rightbox {
+  width: 590px;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-#topmenu #rightbox #banner{
-	width: 190px;
+
+#topmenu #rightbox > * {
+  flex-shrink: 0;
 }
-#topmenu #message{
-	height: 270px;
-	margin-bottom: 10px;
-	background-color: #bbd762;
-	font-size: 12px;
-	padding: 10px;	
+#topmenu #newstxt {
+  height: 145px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  font-size: 12px;
+  color: #666;
+  padding: 10px;
+}
+
+#news-container {
+  width: 380px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e0e0e0;
+}
+
+#news-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#news-container #newstxt {
+  height: auto;
+  min-height: 120px;
+  margin-bottom: 0;
+  background-color: #fff;
+  font-size: 12px;
+  color: #666;
+  padding: 15px;
+  line-height: 1.6;
+  border-top: 1px solid #f0f0f0;
+  font-family: "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic", "Yu Gothic UI", "Meiryo", "MS PGothic", sans-serif;
+}
+
+#news-container #newstxt a {
+  color: #91b222;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  padding: 2px 0;
+  transition: color 0.3s ease;
+}
+
+#news-container #newstxt a:hover {
+  color: #ff6699;
+  text-decoration: underline;
+}
+#topmenu #rightbox #banner {
+  width: 190px;
+}
+#topmenu #message {
+  height: 270px;
+  margin-bottom: 10px;
+  background-color: #bbd762;
+  font-size: 12px;
+  padding: 10px;
 }
 
 /* --------------------------------------------------------
 
 -------------------------------------------------------- */
 
-
 #allcts #cts #lessonpoint {
-	font-size: 1.1em;
-	font-weight: bold;
-	color: #FF6699;
-	margin-bottom: 5px;
-	position: relative;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #ff6699;
+  margin-bottom: 5px;
+  position: relative;
 }
 #allcts #cts .upperbar {
-	border-top-width: 1px;
-	border-top-style: dotted;
-	border-top-color: #bbd762;
+  border-top-width: 1px;
+  border-top-style: dotted;
+  border-top-color: #bbd762;
 }
 #allcts #cts .bothbar {
-	border-top-width: 1px;
-	border-top-style: dotted;
-	border-top-color: #bbd762;
-	border-bottom-width: 1px;
-	border-bottom-style: dotted;
-	border-bottom-color: #bbd762;
+  border-top-width: 1px;
+  border-top-style: dotted;
+  border-top-color: #bbd762;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #bbd762;
 }
 #allcts #cts .underbar {
-	border-bottom-width: 1px;
-	border-bottom-style: dotted;
-	border-bottom-color: #bbd762;
+  border-bottom-width: 1px;
+  border-bottom-style: dotted;
+  border-bottom-color: #bbd762;
 }
 #allcts #cts #timetable {
-	margin-top: 20px;
-	margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 #allcts #cts #bt {
-	margin-top: 10px;
-	margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #allcts #cts #bt2 {
-	margin-left: 10px;
-	float: right;
+  margin-left: 10px;
+  float: right;
 }
 #allcts #cts #timetable .txt {
-	margin-top: 20px;
-	margin-right: 20px;
-	margin-bottom: 10px;
-	margin-left: 50px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 50px;
 }
 #allcts #cts #timetable .txt2 {
-	margin-top: 10px;
-	margin-right: 20px;
-	margin-bottom: 10px;
-	margin-left: 50px;
-	font-size:12px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  font-size: 12px;
 }
 .point {
-	font-weight: bold;
-	color: #FF6699;
+  font-weight: bold;
+  color: #ff6699;
 }
 
 .point2 {
-	font-weight: bold;
-	font-size: 1.2em;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 #allcts #cts .img {
-	margin-left: 10px;
-	position: absolute;
-	vertical-align: text-bottom;
+  margin-left: 10px;
+  position: absolute;
+  vertical-align: text-bottom;
 }
 
 .imgleft {
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 .imgright {
-	float: right;
-	margin-left: 10px;
+  float: right;
+  margin-left: 10px;
+  object-fit: cover;
+  max-width: 240px;
+  max-height: 310px;
+  width: auto;
+  height: auto;
 }
 .photostudio {
-	padding-top: 0px;
-	padding-bottom: 100px;
+  padding-top: 0px;
+  padding-bottom: 100px;
 }
 
+/* 画像のアスペクト比を保持 */
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 講師画像のサイズ調整 */
+.teacher img {
+  max-width: 240px;
+  max-height: 310px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
 
 .subpoint {
-	font-size: 0.85em;
-	color: #999;
+  font-size: 0.85em;
+  color: #999;
 }
-
 
 /* --------------------------------------------------------
     yoga-instructor LP 1802-03
 -------------------------------------------------------- */
 
-h1.tit{
-    margin-top: 25px;
+h1.tit {
+  margin-top: 25px;
 }
 
-h2.tit{
-	margin-top: 25px;
-	padding: 10px 10px 10px 25px;
-	position: relative;
-	border: 1px solid #cdcdcd;
-	font-size: 17px;
-	background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 100%); 
-	background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 100%); 
-	background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 ); 
+h2.tit {
+  margin-top: 25px;
+  padding: 10px 10px 10px 25px;
+  position: relative;
+  border: 1px solid #cdcdcd;
+  font-size: 17px;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f1f1f1 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f1f1f1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f1f1',GradientType=0 );
 }
 
-h2.tit:before{
-    content: "";
-    display: inline-block;
-    position: absolute;
-    left: 10px;
-    top: 0;
-    width: 5px;
-    height: 35px;
-    background-color: #9fcf21;
+h2.tit:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 5px;
+  height: 35px;
+  background-color: #9fcf21;
 }
 
-
-.boxleft{
-	float: left;
+.boxleft {
+  float: left;
 }
-.boxright{
-	float: right;
+.boxright {
+  float: right;
 }
-.w500{
-	width: 500px;
-}
-
-.w570{
-	width: 570px;
+.w500 {
+  width: 500px;
 }
 
-.tablewrap{
-	border-collapse: collapse;
-}
-.tablewrap th, .tablewrap td{
-	padding: 15px; 
-	border: 1px solid #ddd;
+.w570 {
+  width: 570px;
 }
 
-.tablewrap th{
-	background-color:#f3f3f3; 
+.tablewrap {
+  border-collapse: collapse;
+}
+.tablewrap th,
+.tablewrap td {
+  padding: 15px;
+  border: 1px solid #ddd;
 }
 
-.steps .tit{
-	margin-left: -10px;
-	padding: 15px 10px 15px 70px;
-	font-size: 21px;
-	color: #9acb1b;
-	font-weight: bold;
+.tablewrap th {
+  background-color: #f3f3f3;
 }
 
-.steps > li{
-	margin-bottom: 20px;
-    padding-bottom: 40px;
-    background: url(../../yoga-instructor/images/bg_steps_flow.gif) no-repeat center bottom transparent;
-}
-.steps > li.lastchild{
-	background-image: none;
-}
-.steps .tit01{
-	background: url(../../yoga-instructor/images/bg_steps01.gif)  no-repeat left top transparent;
-}
-.steps .tit02{
-	background: url(../../yoga-instructor/images/bg_steps02.gif)  no-repeat left top transparent;
-}
-.steps .tit03{
-	background: url(../../yoga-instructor/images/bg_steps03.gif)  no-repeat left top transparent;
-}
-.steps .tit04{
-	background: url(../../yoga-instructor/images/bg_steps04.gif)  no-repeat left top transparent;
-}
-.steps .tit05{
-	background: url(../../yoga-instructor/images/bg_steps05.gif)  no-repeat left top transparent;
+.steps .tit {
+  margin-left: -10px;
+  padding: 15px 10px 15px 70px;
+  font-size: 21px;
+  color: #9acb1b;
+  font-weight: bold;
 }
 
-.course{
-	margin-bottom: 20px;
-	border-bottom: 2px dotted #c7c7c7;
+.steps > li {
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+  background: url(../../yoga-instructor/images/bg_steps_flow.gif) no-repeat
+    center bottom transparent;
+}
+.steps > li.lastchild {
+  background-image: none;
+}
+.steps .tit01 {
+  background: url(../../yoga-instructor/images/bg_steps01.gif) no-repeat left
+    top transparent;
+}
+.steps .tit02 {
+  background: url(../../yoga-instructor/images/bg_steps02.gif) no-repeat left
+    top transparent;
+}
+.steps .tit03 {
+  background: url(../../yoga-instructor/images/bg_steps03.gif) no-repeat left
+    top transparent;
+}
+.steps .tit04 {
+  background: url(../../yoga-instructor/images/bg_steps04.gif) no-repeat left
+    top transparent;
+}
+.steps .tit05 {
+  background: url(../../yoga-instructor/images/bg_steps05.gif) no-repeat left
+    top transparent;
 }
 
-.course-dt{
-    display: inline-block;
-    padding: 5px 10px;
-    margin-bottom: 10px;
-	background-color: #ff73a2;
-    border-radius: 5px;
-    color: #fff;
+.course {
+  margin-bottom: 20px;
+  border-bottom: 2px dotted #c7c7c7;
 }
 
-.course-tit{
-	position: relative;
-	padding-left: 20px;
+.course-dt {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  background-color: #ff73a2;
+  border-radius: 5px;
+  color: #fff;
 }
 
-.course-tit::after{
-	display: block;
-    content: '';
-    position: absolute;
-    top: .4em;
-    left: 0;
-    width: 10px;
-    height: 7px;
-    border-left: 3px solid #9fcf21;
-    border-bottom: 3px solid #9fcf21;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+.course-tit {
+  position: relative;
+  padding-left: 20px;
 }
 
-.schedule{
-    display: inline-block;
-    margin-top: 10px;
-    padding: 3px 10px;
-    margin-bottom: 5px;
-	border: 1px solid #adadad;
-    font-size: 12px;
+.course-tit::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0.4em;
+  left: 0;
+  width: 10px;
+  height: 7px;
+  border-left: 3px solid #9fcf21;
+  border-bottom: 3px solid #9fcf21;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
-.tacenter{
-	text-align: center;
-}
-.strike{
-	text-decoration: line-through;
+.schedule {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 3px 10px;
+  margin-bottom: 5px;
+  border: 1px solid #adadad;
+  font-size: 12px;
 }
 
-.fontbold{
-	font-weight: bold;
+.tacenter {
+  text-align: center;
+}
+.strike {
+  text-decoration: line-through;
+}
+
+.fontbold {
+  font-weight: bold;
 }
 
 strong {
   background: linear-gradient(transparent 30%, #ffe940 30%);
 }
-.btn{
-	margin: 15px 0 20px 0;
-	transition: all .3s ease;
+.btn {
+  margin: 15px 0 20px 0;
+  transition: all 0.3s ease;
 }
 
-.btn:hover{
-	opacity: .7;
+.btn:hover {
+  opacity: 0.7;
 }
 
-.col2{
-	width: 48%;
+.col2 {
+  width: 48%;
 }
 
-.mt15{
-	margin-top: 15px; 
+.mt15 {
+  margin-top: 15px;
 }
 
-.mb10{
-	margin-bottom: 10px; 
+.mb10 {
+  margin-bottom: 10px;
 }
 
-.mb15{
-	margin-bottom: 15px; 
+.mb15 {
+  margin-bottom: 15px;
 }
 
-.mb25{
-	margin-bottom: 25px; 
+.mb25 {
+  margin-bottom: 25px;
 }
 
-
-.pl20{
-	padding-left: 20px;
+.pl20 {
+  padding-left: 20px;
 }
 
-.fs13p{
-	font-size: 13px;
+.fs13p {
+  font-size: 13px;
 }
-
-

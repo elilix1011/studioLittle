@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #faf5d3 0%, #f8f4c8 100%);
+  color: #333;
+  font-family: "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic", "Yu Gothic UI", "Meiryo", "MS PGothic", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+#head {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(187, 215, 98, 0.3);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+#head .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#head .logo {
+  height: 65px;
+  width: auto;
+  margin-right: 30px;
+}
+
+#head .nav-links {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+#head .nav-links img {
+  height: 45px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+#head .nav-links img:hover {
+  transform: translateY(-2px);
+}
+
+#head .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+#head .social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+#head .social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Main Visual Section */
+#allcts {
+  margin: 30px auto;
+  max-width: 980px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+#allcts img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content Area */
+#topmenu {
+  max-width: 980px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Left Column */
+#leftbox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#leftbox img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#leftbox img:hover {
+  transform: translateY(-5px);
+}
+
+#message {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #91b222;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Right Column */
+#rightbox {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  align-items: start;
+}
+
+#rightbox > * {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#rightbox > *:hover {
+  transform: translateY(-3px);
+}
+
+#rightbox img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* NEWS Container */
+#news-container {
+  grid-column: 1 / -1;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#news-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#newstxt {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+#newstxt a {
+  color: #91b222;
+  display: block;
+  margin-bottom: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(145, 178, 34, 0.1);
+  transition: all 0.3s ease;
+}
+
+#newstxt a:hover {
+  color: #6b8a1a;
+  background: rgba(145, 178, 34, 0.05);
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+/* Bottom Grid */
+.bottom-grid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.bottom-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.bottom-grid img:hover {
+  transform: translateY(-3px);
+}
+
+/* Footer */
+#footer {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 2px solid rgba(187, 215, 98, 0.3);
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  #topmenu {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  #rightbox {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #head .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #head .nav-links {
+    justify-content: center;
+  }
+
+  #topmenu {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #rightbox {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  #message {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  .bottom-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  #head .nav-links {
+    gap: 3px;
+  }
+
+  #head .nav-links img {
+    height: 40px;
+  }
+
+  #message {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  #newstxt {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .bottom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#topmenu > * {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+#topmenu > *:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+/* Modern Button Styles */
+.modern-button {
+  background: linear-gradient(135deg, #91b222 0%, #6b8a1a 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(145, 178, 34, 0.3);
+}
+
+.modern-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(145, 178, 34, 0.4);
+}
+
+/* Card Hover Effects */
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}

@@ -1,20 +1,27 @@
 FROM nginx:alpine
 
-# 必要なパッケージのインストール
+# 必要なパッケージをインストール
 RUN apk add --no-cache \
     curl \
     vim \
-    git
+    git \
+    perl \
+    perl-cgi \
+    perl-module-build \
+    fcgiwrap \
+    spawn-fcgi
 
-# Nginx設定のコピー
+# fcgiwrapを起動するスクリプトを作成
+RUN echo '#!/bin/sh' > /start.sh && \
+    echo 'spawn-fcgi -s /var/run/fcgiwrap.socket -M 766 /usr/bin/fcgiwrap' >> /start.sh && \
+    echo 'nginx -g "daemon off;"' >> /start.sh && \
+    chmod +x /start.sh
+
+# Nginx設定ファイルをコピー
 COPY docker/nginx/default.conf /etc/nginx/conf.d/default.conf
 
-# 作業ディレクトリの設定
-WORKDIR /var/www/html
-
-# ポートの公開
+# ポート80を公開
 EXPOSE 80
 
-# ヘルスチェック
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost/ || exit 1
+# 起動スクリプトを実行
+CMD ["/start.sh"]
