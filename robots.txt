@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.studiolittle.info/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas
+Disallow: /blog/wp-admin/
+Disallow: /cgi/
+Disallow: /tmp/
